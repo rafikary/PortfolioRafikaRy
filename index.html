@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Rafika Ry - Fullstack Developer</title>
+    <meta name="description" content="Portfolio Fullstack Developer - HTML, CSS, JavaScript, PHP, MySQL, React, Node.js">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fallback-icons.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css?v=2025">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+        </div>
+        <p><i class="fa fa-code"></i> Loading Portfolio...</p>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <div class="theme-toggle" id="theme-toggle">
+                    <div class="toggle-switch">
+                        <span class="toggle-icon">🌙</span>
+                        <span class="toggle-icon">☀️</span>
+                        <div class="toggle-slider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Halo, Saya <span class="highlight">Rafika Rahma Yunita</span></h1>
+                <h2 class="typing-text"></h2>
+                <p>Hai!
+Saya mahasiswa aktif Universitas Airlangga yang suka banget dengan dunia teknologi dan bisnis. Fokus saya ada di web programming, Internet of Things, Artificial Intelligence, UI/UX, dan manajemen proyek. Selama kuliah, saya sering terlibat di berbagai proyek, mulai dari bikin website, riset, ngurus administrasi, sampai ngembangin aplikasi mobile. Saya juga senang menulis ilmiah dan mencoba ide-ide seru buat pengembangan startup.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Lihat Portfolio</a>
+                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/rafikary" target="_blank" rel="noopener" title="GitHub"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rafika-ry-b642b2243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://instagram.com/ryrafikaa" target="_blank" rel="noopener" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="mailto:rafikary12@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <div class="image-container">
+                    <img src="assets/profile.jpg" alt="Profile Picture">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p><i class="fa fa-chevron-down"></i> Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Teknologi, Organisasi, dan Aksi Sosial</h3>
+                    <p>Saya adalah seorang fullstack developer yang tidak hanya fokus pada pengembangan web dan Machine Learning, tetapi juga aktif di berbagai kegiatan sosial, organisasi, dan kepanitiaan. Dengan pengalaman di berbagai proyek dan komunitas, saya terbiasa menggabungkan kemampuan teknis dengan kerja sama tim, manajemen, dan kontribusi sosial.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>5+ </h4>
+                            <p>Work Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>15+</h4>
+                            <p>Committees and Organizations</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>3+</h4>
+                            <p>Awards</p>
+                        </div>
+                    </div>
+
+                    <div class="about-info">
+                        <div class="info-item">
+                            <strong>Nama:</strong> <span>Rafika Rahma Yunita</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Email:</strong> <span>rafikary12@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Phone:</strong> <span>+62 858-5664-0590</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Lokasi:</strong> <span>Surabaya, Indonesia</span>
+                        </div>
+                    </div>
+
+                    <a href="assets/cv.pdf" class="btn btn-primary" download>
+                        <i class="fa fa-download"></i> Download CV
+                    </a>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-wrapper">
+                        <img src="assets/about.jpg" alt="About Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Keahlian</h2>
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3><i class="fa fa-code"></i> Frontend</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>CSS3/SCSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>React.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3><i class="fa fa-server"></i> Backend</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>PHP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Laravel</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <h3><i class="fa fa-database"></i> Database & Tools</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>MongoDB</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Git/GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Docker</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Portfolio</h2>
+            <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web App</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="assets/project1.jpg" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Tootech</h3>
+                                <p>Sistem Diagnosa Penyakit Gigi</p>
+                                <div class="portfolio-tech">
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                    <span>Python</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" data-project="1" title="View Project">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <a href="#" target="_blank" title="View on GitHub">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ecommerce" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="assets/project2.jpg" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>PulmoCare</h3>
+                                <p>Platform Diagnosa Penyakit Kanker Paru Paru</p>
+                                <div class="portfolio-tech">
+                                   <span>PHP</span>
+                                    <span>Flask</span>
+                                    <span>Python</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" data-project="2" title="View Project">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <a href="#" target="_blank" title="View on GitHub">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="assets/project3.jpg" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Dentist</h3>
+                                <p>Aplikasi Untuk Pemesanan Dokter Gigi</p>
+                                <div class="portfolio-tech">
+                                    <span>Flutter</span>
+                                    <span>Laravel</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" data-project="3" title="View Project">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <a href="#" target="_blank" title="View on GitHub">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-image">
+                        <img src="assets/project4.jpg" alt="Project 4">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>E- Commerce Toko Parfum</h3>
+                                <p>Aplikasi Pemasaran Toko Parfum dengan Nuansa Simple</p>
+                                <div class="portfolio-tech">
+                                    <span>Laravel</span>
+                                    <span>API</span>
+                                    <span>PHP</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" data-project="4" title="View Project">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <a href="#" target="_blank" title="View on GitHub">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="assets/project5.jpg" alt="Project 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Admin Cakeshop</h3>
+                                <p>Aplikasi Untuk Admin mengelola dan laporan toko Kue</p>
+                                <div class="portfolio-tech">
+                                    <span>CSS</span>
+                                    <span>HTML</span>
+                                    <span>JavaScript</span>
+                                    <span>PHP</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" data-project="5" title="View Project">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <a href="#" target="_blank" title="View on GitHub">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="assets/project6.jpg" alt="Project 6">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>RumahVelg</h3>
+                                <p>Aplikasi Untuk Pemasaran Velg Mobil</p>
+                                <div class="portfolio-tech">
+                                    <span>Laravel</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" data-project="6" title="View Project">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <a href="#" target="_blank" title="View on GitHub">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Hubungi Saya</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Mari Berdiskusi</h3>
+                    <p>Saya terbuka untuk peluang kerja baru dan project menarik. Jangan ragu untuk menghubungi saya!</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>rafikary12@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+62 858-5664-0590</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Lokasi</h4>
+                                <p>Surabaya, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contact-form">
+                        <!-- Honeypot field for spam protection -->
+                        <div style="position: absolute; left: -9999px; top: -9999px;">
+                            <label for="website" style="position:absolute; width:1px; height:1px; margin:-1px; border:0; padding:0; overflow:hidden; clip:rect(0 0 0 0);">Website</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" title="Leave this field empty" placeholder="Website">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Pesan Anda" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Rafikary. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/rafikary" target="_blank" rel="noopener" title="GitHub"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rafika-ry-b642b2243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://instagram.com/ryrafikaa" target="_blank" rel="noopener" title="Instagram"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modal -->
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                    <div class="modal-tech" id="modal-tech"></div>
+                    <div class="modal-links">
+                        <a href="#" id="modal-demo" target="_blank" class="btn btn-primary">
+                            <i class="fa fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" id="modal-github" target="_blank" class="btn btn-secondary">
+                            <i class="fa fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top" title="Back to top">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
+</html>
