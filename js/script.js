@@ -245,36 +245,52 @@ filterBtns.forEach(btn => {
 // ===== PORTFOLIO MODAL =====
 const portfolioData = {
     1: {
-        title: 'Restaurant Management System',
-        description: 'Sistem manajemen restoran lengkap dengan fitur pemesanan online, manajemen menu, laporan penjualan, dan dashboard admin. Aplikasi ini dibuat menggunakan PHP native dengan database MySQL dan framework Bootstrap untuk tampilan yang responsive.',
+        title: 'Tootech',
+        description: 'Sistem Diagnosa Penyakit Gigi dengan menggunakan teknologi AI dan machine learning untuk memberikan diagnosis yang akurat. Aplikasi ini dilengkapi dengan interface yang user-friendly dan database komprehensif tentang berbagai penyakit gigi.',
         image: 'assets/project1.jpg',
-        tech: ['PHP', 'MySQL', 'Bootstrap', 'JavaScript', 'jQuery'],
-        demo: 'https://demo-restaurant.com',
-        github: 'https://github.com/username/restaurant-system'
+        tech: ['PHP', 'MySQL', 'Python', 'HTML', 'CSS'],
+        demo: 'https://github.com/rafikary',
+        github: 'https://github.com/rafikary'
     },
     2: {
-        title: 'E-commerce Platform',
-        description: 'Platform e-commerce modern dengan fitur keranjang belanja, payment gateway, sistem review produk, dan dashboard admin. Dibangun dengan React.js untuk frontend dan Node.js dengan Express untuk backend, menggunakan MongoDB sebagai database.',
+        title: 'PulmoCare',
+        description: 'Platform Diagnosa Penyakit Kanker Paru-Paru menggunakan teknologi deep learning dan computer vision untuk analisis citra medis. Sistem ini membantu tenaga medis dalam melakukan screening awal dan diagnosis kanker paru-paru dengan tingkat akurasi tinggi.',
         image: 'assets/project2.jpg',
-        tech: ['React.js', 'Node.js', 'MongoDB', 'Express', 'Stripe API'],
-        demo: 'https://demo-ecommerce.com',
-        github: 'https://github.com/username/ecommerce-platform'
+        tech: ['PHP', 'Flask', 'Python', 'HTML', 'CSS'],
+        demo: 'https://github.com/rafikary',
+        github: 'https://github.com/rafikary'
     },
     3: {
-        title: 'Task Management App',
-        description: 'Aplikasi manajemen tugas dengan fitur real-time collaboration, notifikasi push, drag & drop interface, dan sistem role-based. Menggunakan Vue.js dengan Vuex untuk state management dan Laravel sebagai backend API.',
+        title: 'Dentist',
+        description: 'Aplikasi mobile untuk pemesanan dokter gigi dengan fitur scheduling yang fleksibel, profile dokter lengkap, dan sistem notifikasi appointment. Dibangun dengan Flutter untuk cross-platform compatibility dan Laravel sebagai backend API.',
         image: 'assets/project3.jpg',
-        tech: ['Vue.js', 'Laravel', 'Socket.io', 'Pusher', 'MySQL'],
-        demo: 'https://demo-taskapp.com',
-        github: 'https://github.com/username/task-management'
+        tech: ['Flutter', 'Laravel'],
+        demo: 'https://github.com/rafikary',
+        github: 'https://github.com/rafikary'
     },
     4: {
-        title: 'Weather App',
-        description: 'Aplikasi cuaca mobile dengan data real-time dari OpenWeatherMap API. Fitur meliputi prakiraan 7 hari, grafik suhu, notifikasi cuaca ekstrem, dan lokasi favorit. Dibangun dengan React Native dan Redux untuk state management.',
+        title: 'E-Commerce Toko Parfum',
+        description: 'Aplikasi pemasaran toko parfum dengan nuansa simple dan elegant. Fitur lengkap mulai dari katalog produk, sistem pembayaran, manajemen inventory, hingga dashboard admin untuk monitoring penjualan.',
         image: 'assets/project4.jpg',
-        tech: ['React Native', 'Redux', 'OpenWeather API', 'Async Storage'],
-        demo: 'https://play.google.com/store/apps/weather-app',
-        github: 'https://github.com/username/weather-app'
+        tech: ['Laravel', 'API', 'PHP'],
+        demo: 'https://github.com/rafikary',
+        github: 'https://github.com/rafikary'
+    },
+    5: {
+        title: 'Admin Cakeshop',
+        description: 'Aplikasi untuk admin mengelola dan membuat laporan toko kue. Sistem ini dilengkapi dengan fitur manajemen produk, tracking pesanan, laporan penjualan, dan dashboard analytics untuk membantu owner dalam mengambil keputusan bisnis.',
+        image: 'assets/project5.jpg',
+        tech: ['CSS', 'HTML', 'JavaScript', 'PHP'],
+        demo: 'https://github.com/rafikary',
+        github: 'https://github.com/rafikary'
+    },
+    6: {
+        title: 'RumahVelg',
+        description: 'Aplikasi untuk pemasaran velg mobil dengan katalog lengkap berbagai jenis velg, sistem pencarian berdasarkan merk mobil, dan fitur konsultasi online. Dibangun menggunakan Laravel dengan admin panel yang user-friendly.',
+        image: 'assets/project6.jpg',
+        tech: ['Laravel'],
+        demo: 'https://github.com/rafikary',
+        github: 'https://github.com/rafikary'
     }
 };
 

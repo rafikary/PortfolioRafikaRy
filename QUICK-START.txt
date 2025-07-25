@@ -1,0 +1,36 @@
+🚀 CARA MENJALANKAN WEBSITE PORTFOLIO
+==========================================
+
+LANGKAH CEPAT:
+1. Pastikan XAMPP sudah terinstall
+2. Double-click file "start-server.bat"
+3. Website akan terbuka otomatis di browser
+4. URL: http://localhost/Portofolio
+
+ATAU MANUAL:
+1. Buka XAMPP Control Panel
+2. Start Apache
+3. Buka browser, ketik: http://localhost/Portofolio
+
+KUSTOMISASI:
+- Baca file CUSTOMIZATION.md untuk panduan lengkap
+- Upload foto Anda ke folder assets/
+- Edit informasi pribadi di index.html
+
+FITUR UNGGULAN:
+✅ Responsive Design
+✅ Dark/Light Mode
+✅ Typing Animation
+✅ Particle Background
+✅ Contact Form dengan PHP
+✅ Portfolio Filter
+✅ Smooth Animations
+✅ Loading Screen
+✅ Back to Top Button
+✅ SEO Optimized
+
+BUTUH BANTUAN?
+- Baca README.md untuk dokumentasi lengkap
+- Check folder assets/README.md untuk panduan gambar
+
+Selamat menggunakan! 🎉
