@@ -767,18 +767,8 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-// ===== CONSOLE MESSAGE =====
-console.log(`
-██╗  ██╗███████╗██╗     ██╗      ██████╗ 
-██║  ██║██╔════╝██║     ██║     ██╔═══██╗
-███████║█████╗  ██║     ██║     ██║   ██║
-██╔══██║██╔══╝  ██║     ██║     ██║   ██║
-██║  ██║███████╗███████╗███████╗╚██████╔╝
-╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝ 
-
-Tertarik dengan kode ini? Mari berdiskusi!
-Email: email@example.com
-`);
+// Console welcome message
+console.log('Portfolio loaded successfully!');
 
 // ===== INITIALIZATION =====
 document.addEventListener('DOMContentLoaded', () => {
