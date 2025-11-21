@@ -1791,3 +1791,14 @@ section {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--secondary-color);
 }
+.portfolio-cta {
+    max-width: 800px;
+    margin: 3rem auto 0;   /* jarak ke atas + center */
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.portfolio-cta p {
+    margin-bottom: 1.5rem; /* jarak antara teks dan tombol */
+    line-height: 1.7;
+}
