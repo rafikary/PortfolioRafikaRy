@@ -759,36 +759,66 @@ section {
     color: var(--text-primary);
 }
 
-/* Brand specific colors on hover */
-.tech-icon-card.python:hover { border-color: #3776ab; box-shadow: 0 0 15px rgba(55, 118, 171, 0.3); }
-.tech-icon-card.python:hover i { color: #3776ab; }
+/* Brand specific colors (permanently active) */
+/* Python */
+.tech-icon-card.python { border-color: rgba(55, 118, 171, 0.4); box-shadow: 0 0 10px rgba(55, 118, 171, 0.15); }
+.tech-icon-card.python i { color: #3776ab; }
+.tech-icon-card.python span { color: var(--text-primary); }
+.tech-icon-card.python:hover { border-color: #3776ab; box-shadow: 0 0 20px rgba(55, 118, 171, 0.45); }
 
-.tech-icon-card.react:hover { border-color: #61dafb; box-shadow: 0 0 15px rgba(97, 218, 251, 0.3); }
-.tech-icon-card.react:hover i { color: #61dafb; }
+/* React */
+.tech-icon-card.react { border-color: rgba(97, 218, 251, 0.4); box-shadow: 0 0 10px rgba(97, 218, 251, 0.15); }
+.tech-icon-card.react i { color: #61dafb; }
+.tech-icon-card.react span { color: var(--text-primary); }
+.tech-icon-card.react:hover { border-color: #61dafb; box-shadow: 0 0 20px rgba(97, 218, 251, 0.45); }
 
-.tech-icon-card.node:hover { border-color: #339933; box-shadow: 0 0 15px rgba(51, 153, 51, 0.3); }
-.tech-icon-card.node:hover i { color: #339933; }
+/* NodeJS */
+.tech-icon-card.node { border-color: rgba(51, 153, 51, 0.4); box-shadow: 0 0 10px rgba(51, 153, 51, 0.15); }
+.tech-icon-card.node i { color: #339933; }
+.tech-icon-card.node span { color: var(--text-primary); }
+.tech-icon-card.node:hover { border-color: #339933; box-shadow: 0 0 20px rgba(51, 153, 51, 0.45); }
 
-.tech-icon-card.laravel:hover { border-color: #ff2d20; box-shadow: 0 0 15px rgba(255, 45, 32, 0.3); }
-.tech-icon-card.laravel:hover i { color: #ff2d20; }
+/* Laravel */
+.tech-icon-card.laravel { border-color: rgba(255, 45, 32, 0.4); box-shadow: 0 0 10px rgba(255, 45, 32, 0.15); }
+.tech-icon-card.laravel i { color: #ff2d20; }
+.tech-icon-card.laravel span { color: var(--text-primary); }
+.tech-icon-card.laravel:hover { border-color: #ff2d20; box-shadow: 0 0 20px rgba(255, 45, 32, 0.45); }
 
-.tech-icon-card.mysql:hover { border-color: #00758f; box-shadow: 0 0 15px rgba(0, 117, 143, 0.3); }
-.tech-icon-card.mysql:hover i { color: #00758f; }
+/* MySQL */
+.tech-icon-card.mysql { border-color: rgba(0, 117, 143, 0.4); box-shadow: 0 0 10px rgba(0, 117, 143, 0.15); }
+.tech-icon-card.mysql i { color: #00758f; }
+.tech-icon-card.mysql span { color: var(--text-primary); }
+.tech-icon-card.mysql:hover { border-color: #00758f; box-shadow: 0 0 20px rgba(0, 117, 143, 0.45); }
 
-.tech-icon-card.docker:hover { border-color: #2496ed; box-shadow: 0 0 15px rgba(36, 150, 237, 0.3); }
-.tech-icon-card.docker:hover i { color: #2496ed; }
+/* Docker */
+.tech-icon-card.docker { border-color: rgba(36, 150, 237, 0.4); box-shadow: 0 0 10px rgba(36, 150, 237, 0.15); }
+.tech-icon-card.docker i { color: #2496ed; }
+.tech-icon-card.docker span { color: var(--text-primary); }
+.tech-icon-card.docker:hover { border-color: #2496ed; box-shadow: 0 0 20px rgba(36, 150, 237, 0.45); }
 
-.tech-icon-card.github-tech:hover { border-color: var(--text-primary); box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); }
-.tech-icon-card.github-tech:hover i { color: var(--text-primary); }
+/* Git & GitHub */
+.tech-icon-card.github-tech { border-color: rgba(255, 255, 255, 0.25); box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); }
+.tech-icon-card.github-tech i { color: var(--text-primary); }
+.tech-icon-card.github-tech span { color: var(--text-primary); }
+.tech-icon-card.github-tech:hover { border-color: var(--text-primary); box-shadow: 0 0 20px rgba(255, 255, 255, 0.35); }
 
-.tech-icon-card.html5:hover { border-color: #e34f26; box-shadow: 0 0 15px rgba(227, 79, 38, 0.3); }
-.tech-icon-card.html5:hover i { color: #e34f26; }
+/* HTML5 */
+.tech-icon-card.html5 { border-color: rgba(227, 79, 38, 0.4); box-shadow: 0 0 10px rgba(227, 79, 38, 0.15); }
+.tech-icon-card.html5 i { color: #e34f26; }
+.tech-icon-card.html5 span { color: var(--text-primary); }
+.tech-icon-card.html5:hover { border-color: #e34f26; box-shadow: 0 0 20px rgba(227, 79, 38, 0.45); }
 
-.tech-icon-card.css3:hover { border-color: #1572b6; box-shadow: 0 0 15px rgba(21, 114, 182, 0.3); }
-.tech-icon-card.css3:hover i { color: #1572b6; }
+/* CSS3 */
+.tech-icon-card.css3 { border-color: rgba(21, 114, 182, 0.4); box-shadow: 0 0 10px rgba(21, 114, 182, 0.15); }
+.tech-icon-card.css3 i { color: #1572b6; }
+.tech-icon-card.css3 span { color: var(--text-primary); }
+.tech-icon-card.css3:hover { border-color: #1572b6; box-shadow: 0 0 20px rgba(21, 114, 182, 0.45); }
 
-.tech-icon-card.js:hover { border-color: #f7df1e; box-shadow: 0 0 15px rgba(247, 223, 30, 0.3); }
-.tech-icon-card.js:hover i { color: #f7df1e; }
+/* JS / TS */
+.tech-icon-card.js { border-color: rgba(247, 223, 30, 0.4); box-shadow: 0 0 10px rgba(247, 223, 30, 0.15); }
+.tech-icon-card.js i { color: #f7df1e; }
+.tech-icon-card.js span { color: var(--text-primary); }
+.tech-icon-card.js:hover { border-color: #f7df1e; box-shadow: 0 0 20px rgba(247, 223, 30, 0.45); }
 
 .skills-grid {
     display: grid;
