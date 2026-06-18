@@ -912,10 +912,10 @@ section {
 .tech-icon-card.docker:hover { border-color: #2496ed; box-shadow: 0 0 20px rgba(36, 150, 237, 0.45); }
 
 /* Git & GitHub */
-.tech-icon-card.github-tech { border-color: rgba(255, 255, 255, 0.25); box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); }
-.tech-icon-card.github-tech i { color: var(--text-primary); }
+.tech-icon-card.github-tech { border-color: rgba(240, 80, 50, 0.4); box-shadow: 0 0 10px rgba(240, 80, 50, 0.15); }
+.tech-icon-card.github-tech i { color: #f05032; }
 .tech-icon-card.github-tech span { color: var(--text-primary); }
-.tech-icon-card.github-tech:hover { border-color: var(--text-primary); box-shadow: 0 0 20px rgba(255, 255, 255, 0.35); }
+.tech-icon-card.github-tech:hover { border-color: #f05032; box-shadow: 0 0 20px rgba(240, 80, 50, 0.45); }
 
 /* HTML5 */
 .tech-icon-card.html5 { border-color: rgba(227, 79, 38, 0.4); box-shadow: 0 0 10px rgba(227, 79, 38, 0.15); }
