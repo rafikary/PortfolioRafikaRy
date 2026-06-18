@@ -198,12 +198,12 @@ filterBtns.forEach(btn => {
 // ===== PORTFOLIO MODAL =====
 const portfolioData = {
     1: {
-        title: 'Tootech',
-        description: 'Sistem Diagnosa Penyakit Gigi dengan menggunakan teknologi AI dan machine learning untuk memberikan diagnosis yang akurat. Aplikasi ini dilengkapi dengan interface yang user-friendly dan database komprehensif tentang berbagai penyakit gigi.',
+        title: 'Toothtech',
+        description: 'Dental Health Information & Diagnostic Website. Aplikasi web yang dirancang untuk membantu pengguna memperoleh informasi mengenai kesehatan gigi dan melakukan pemeriksaan awal berdasarkan gejala yang dialami melalui kuesioner interaktif.',
         image: 'assets/project1.jpg',
-        tech: ['PHP', 'MySQL', 'Python', 'HTML', 'CSS'],
-        demo: 'https://github.com/rafikary',
-        github: 'https://github.com/rafikary'
+        tech: ['PHP', 'MySQL', 'HTML5', 'CSS3', 'JavaScript'],
+        demo: 'https://github.com/rafikary/Toothtech-Website',
+        github: 'https://github.com/rafikary/Toothtech-Website'
     },
     2: {
         title: 'PulmoCare',
