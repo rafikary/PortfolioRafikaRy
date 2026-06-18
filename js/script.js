@@ -244,6 +244,14 @@ const portfolioData = {
         tech: ['Laravel'],
         demo: 'https://github.com/rafikary',
         github: 'https://github.com/rafikary'
+    },
+    7: {
+        title: 'ERP Analytics AI Assistant',
+        description: 'ERP Analytics AI Assistant adalah chatbot berbasis Artificial Intelligence yang dikembangkan untuk membantu pengguna ERP memperoleh informasi bisnis secara cepat menggunakan bahasa natural terintegrasi database ERP.',
+        image: 'assets/project10.png',
+        tech: ['Python', 'Flask', 'LLM', 'RAG'],
+        demo: 'projects/chatbot-erp.html',
+        github: 'https://github.com/rafikary/chatbot_for_erp'
     }
 };
 
