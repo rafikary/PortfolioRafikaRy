@@ -206,10 +206,10 @@ const portfolioData = {
         github: 'https://github.com/rafikary/Toothtech-Website'
     },
     2: {
-        title: 'PulmoCare',
-        description: 'Platform Diagnosa Penyakit Kanker Paru-Paru menggunakan teknologi deep learning dan computer vision untuk analisis citra medis. Sistem ini membantu tenaga medis dalam melakukan screening awal dan diagnosis kanker paru-paru dengan tingkat akurasi tinggi.',
-        image: 'assets/project2.jpg',
-        tech: ['PHP', 'Flask', 'Python', 'HTML', 'CSS'],
+        title: 'Sales & BI Dashboard',
+        description: 'Sales & Business Intelligence Dashboard adalah platform analitik berbasis web yang dikembangkan untuk membantu manajemen PT Berkat Chandra memantau performa penjualan, target bisnis, kondisi stok, cashflow, aktivitas sales, serta pencapaian setiap depo secara real-time.',
+        image: 'assets/project2.png',
+        tech: ['Python', 'SQL', 'Data Analytics', 'Business Intelligence', 'REST API'],
         demo: 'https://github.com/rafikary',
         github: 'https://github.com/rafikary'
     },
