@@ -170,20 +170,20 @@ body {
 }
 
 .loader-snail {
-    font-size: 4.5rem;
-    background: var(--gradient-primary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: snail-crawl 2s infinite ease-in-out;
-    filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.4));
+    font-size: 5rem;
+    display: inline-block;
+    animation: snail-crawl 3s infinite ease-in-out;
+    filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.5));
     margin-bottom: 20px;
+    line-height: 1;
 }
 
 @keyframes snail-crawl {
-    0% { transform: translateX(-25px) rotate(-3deg); }
-    50% { transform: translateX(25px) rotate(3deg) scaleY(0.9); }
-    100% { transform: translateX(-25px) rotate(-3deg); }
+    0% { transform: translateX(-45px) scaleX(-1) rotate(-3deg); }
+    45% { transform: translateX(45px) scaleX(-1) rotate(3deg) scaleY(0.9); }
+    50% { transform: translateX(45px) scaleX(1) rotate(3deg); }
+    95% { transform: translateX(-45px) scaleX(1) rotate(-3deg) scaleY(0.9); }
+    100% { transform: translateX(-45px) scaleX(-1) rotate(-3deg); }
 }
 
 #loading-screen p {
