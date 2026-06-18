@@ -24,9 +24,6 @@ window.addEventListener('load', () => {
             offset: 100
         });
         
-        // Initialize particles
-        initParticles();
-        
         // Start typing animation
         startTypingAnimation();
         
@@ -36,61 +33,16 @@ window.addEventListener('load', () => {
     }, 2000);
 });
 
-// ===== PARTICLES BACKGROUND =====
-function initParticles() {
-    if (typeof particlesJS !== 'undefined') {
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: '#ec4899' },
-                shape: { type: 'circle' },
-                opacity: { value: 0.5, random: false },
-                size: { value: 3, random: true },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: '#f9a8d4',
-                    opacity: 0.4,
-                    width: 1
-                },
-                move: {
-                    enable: true,
-                    speed: 6,
-                    direction: 'none',
-                    random: false,
-                    straight: false,
-                    out_mode: 'out',
-                    bounce: false
-                }
-            },
-            interactivity: {
-                detect_on: 'canvas',
-                events: {
-                    onhover: { enable: true, mode: 'repulse' },
-                    onclick: { enable: true, mode: 'push' },
-                    resize: true
-                },
-                modes: {
-                    grab: { distance: 400, line_linked: { opacity: 1 } },
-                    bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
-                    repulse: { distance: 200, duration: 0.4 },
-                    push: { particles_nb: 4 },
-                    remove: { particles_nb: 2 }
-                }
-            },
-            retina_detect: true
-        });
-    }
-}
+
 
 // ===== TYPING ANIMATION =====
 function startTypingAnimation() {
     const typingText = document.querySelector('.typing-text');
     const texts = [
+        'Fresh Graduate IT',
+        'Data Scientist BNSP',
+        'AI & ML Programmer',
         'Fullstack Developer',
-        'Frontend Specialist',
-        'Backend Engineer',
-        'UI/UX Enthusiast',
         'Problem Solver'
     ];
     
@@ -193,7 +145,7 @@ themeToggle.addEventListener('click', () => {
 
 // Load saved theme
 document.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
 });
 
@@ -225,7 +177,8 @@ filterBtns.forEach(btn => {
         const filterValue = btn.getAttribute('data-filter');
         
         portfolioItems.forEach(item => {
-            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+            const categories = (item.getAttribute('data-category') || '').split(' ');
+            if (filterValue === 'all' || categories.includes(filterValue)) {
                 item.style.display = 'block';
                 setTimeout(() => {
                     item.style.opacity = '1';
@@ -294,35 +247,8 @@ const portfolioData = {
     }
 };
 
-portfolioLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const projectId = link.getAttribute('data-project');
-        const project = portfolioData[projectId];
-        
-        if (project) {
-            // Populate modal with project data
-            document.getElementById('modal-img').src = project.image;
-            document.getElementById('modal-title').textContent = project.title;
-            document.getElementById('modal-description').textContent = project.description;
-            document.getElementById('modal-demo').href = project.demo;
-            document.getElementById('modal-github').href = project.github;
-            
-            // Populate tech stack
-            const techContainer = document.getElementById('modal-tech');
-            techContainer.innerHTML = '';
-            project.tech.forEach(tech => {
-                const span = document.createElement('span');
-                span.textContent = tech;
-                techContainer.appendChild(span);
-            });
-            
-            // Show modal
-            portfolioModal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
-    });
-});
+// Portfolio links directly navigate to their respective sub-pages.
+// Modal event listener is disabled to prevent overrides.
 
 // Close modal
 document.querySelector('.close').addEventListener('click', () => {
@@ -575,7 +501,6 @@ class ResponsiveHandler {
     
     init() {
         this.handleNavigation();
-        this.handleParticles();
         this.handleModals();
         this.handleTouchEvents();
         
@@ -608,19 +533,7 @@ class ResponsiveHandler {
         });
     }
     
-    handleParticles() {
-        // Reduce particles on mobile devices
-        if (typeof particlesJS !== 'undefined') {
-            const particleCount = this.currentBreakpoint === 'xs' ? 30 : 
-                                this.currentBreakpoint === 'sm' ? 50 : 80;
-            
-            // Update particle configuration based on screen size
-            if (window.pJSDom && window.pJSDom[0]) {
-                window.pJSDom[0].pJS.particles.number.value = particleCount;
-                window.pJSDom[0].pJS.fn.particlesRefresh();
-            }
-        }
-    }
+
     
     handleModals() {
         // Improve modal behavior on mobile
@@ -692,9 +605,6 @@ class ResponsiveHandler {
     }
     
     handleBreakpointChange() {
-        // Handle specific changes when breakpoint changes
-        this.handleParticles();
-        
         // Reset navigation state
         if (this.currentBreakpoint !== 'xs' && this.currentBreakpoint !== 'sm') {
             navMenu.classList.remove('active');

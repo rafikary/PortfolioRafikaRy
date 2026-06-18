@@ -13,7 +13,7 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,21 +24,22 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css?v=2025">
+    <link rel="stylesheet" href="css/style.css?v=20260618-2">
 </head>
 <body>
+    <!-- Glowing Background Spheres -->
+    <div class="bg-glow-sphere glow-1"></div>
+    <div class="bg-glow-sphere glow-2"></div>
+
     <!-- Loading Screen -->
     <div id="loading-screen">
-        <div class="loader">
-            <div class="loader-dot"></div>
-            <div class="loader-dot"></div>
-            <div class="loader-dot"></div>
+        <div class="loader-snail">
+            <i class="fa-solid fa-snail"></i>
         </div>
-        <p><i class="fa fa-code"></i> Loading Portfolio...</p>
+        <p>Sabar ya, siputnya lagi jalan...</p>
     </div>
 
-    <!-- Particle Background -->
-    <div id="particles-js"></div>
+
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -50,9 +51,10 @@
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Pengalaman</a>
                 <a href="#portfolio" class="nav-link">Portfolio</a>
-                <!-- Tambahan link ke section Sertifikasi -->
                 <a href="#certifications" class="nav-link">Sertifikasi</a>
+                <a href="#organizations" class="nav-link">Organisasi</a>
                 <a href="#contact" class="nav-link">Contact</a>
                 <div class="theme-toggle" id="theme-toggle">
                     <div class="toggle-switch">
@@ -74,18 +76,23 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content" data-aos="fade-up">
+                <!-- Availability status badge -->
+                <div class="availability-badge">
+                    <div class="badge-dot"></div>
+                    Fresh Graduate
+                </div>
                 <h1>Halo, Saya <span class="highlight">Rafika Rahma Yunita</span></h1>
                 <h2 class="typing-text"></h2>
-                <p>Hai!
-Saya mahasiswa aktif Semester 7 Universitas Airlangga yang suka banget dengan dunia teknologi dan bisnis. Fokus saya ada di web programming, Internet of Things, Artificial Intelligence, UI/UX, dan manajemen proyek. Selama kuliah, saya sering terlibat di berbagai proyek, mulai dari bikin website, riset, ngurus administrasi, sampai ngembangin aplikasi mobile. Saya juga senang menulis ilmiah dan mencoba ide-ide seru buat pengembangan startup.</p>
+                <p>Halo! Saya lulusan <strong class="text-gradient-primary">D4 Teknik Informatika Universitas Airlangga</strong> yang memiliki minat dan pengalaman di bidang <strong class="text-accent">Artificial Intelligence</strong>, <strong class="text-accent">Data Analytics</strong>, dan <strong class="text-accent">Full-Stack Web Development</strong>. Saya menikmati proses membangun solusi digital dari awal hingga siap digunakan, mulai dari merancang database, mengembangkan backend dan frontend, hingga mengintegrasikan AI untuk menciptakan sistem yang lebih cerdas dan efisien.</p>
+                <p>Selama perjalanan saya, saya telah mengembangkan berbagai solusi seperti <strong class="text-secondary-glow">Face Recognition Attendance System</strong>, <strong class="text-secondary-glow">OCR Invoice Automation</strong>, <strong class="text-secondary-glow">AI Chatbot berbasis NLP</strong>, <strong class="text-secondary-glow">Dashboard Business Intelligence</strong>, <strong class="text-secondary-glow">ERP System</strong>, serta aplikasi web yang mendukung kebutuhan operasional dan pengambilan keputusan bisnis.</p>
+                <p>Bagi saya, teknologi bukan hanya tentang menulis kode, tetapi tentang memahami kebutuhan pengguna dan mengubahnya menjadi solusi yang memberikan dampak nyata. Saya senang mengeksplorasi teknologi baru, membangun produk yang bermanfaat, dan terus mengembangkan kemampuan di bidang <strong class="text-primary-glow">software engineering</strong>, <strong class="text-primary-glow">data</strong>, dan <strong class="text-primary-glow">artificial intelligence</strong> untuk menciptakan inovasi yang relevan dan bernilai.</p>
                 <div class="hero-buttons">
                     <a href="#portfolio" class="btn btn-primary">Lihat Portfolio</a>
                     <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
                 </div>
                 <div class="social-links">
                     <a href="https://github.com/rafikary" target="_blank" rel="noopener" title="GitHub"><i class="fa fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/rafika-ry-b642b2243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://instagram.com/ryrafikaa" target="_blank" rel="noopener" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="http://linkedin.com/in/rafikary" target="_blank" rel="noopener" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
                     <a href="mailto:rafikary12@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
                 </div>
             </div>
@@ -105,20 +112,21 @@ Saya mahasiswa aktif Semester 7 Universitas Airlangga yang suka banget dengan du
             <div class="about-content">
                 <div class="about-text" data-aos="fade-right">
                     <h3>Teknologi, Organisasi, dan Aksi Sosial</h3>
-                    <p>Saya adalah seorang fullstack developer yang tidak hanya fokus pada pengembangan web dan Machine Learning, tetapi juga aktif di berbagai kegiatan sosial, organisasi, dan kepanitiaan. Dengan pengalaman di berbagai proyek dan komunitas, saya terbiasa menggabungkan kemampuan teknis dengan kerja sama tim, manajemen, dan kontribusi sosial.</p>
+                    <p>Saya adalah lulusan baru (Fresh Graduate) program studi D4 Teknik Informatika Universitas Airlangga dengan IPK 3.66/4.00. Saya berfokus pada penggabungan kecerdasan buatan (Artificial Intelligence) dan Data Science dengan pengembangan aplikasi web modern yang praktis dan efisien.</p>
+                    <p>Selain keahlian teknis pemrograman, saya aktif memimpin kegiatan sosial masyarakat, kepanitiaan universitas, dan berorganisasi. Saya menikmati proses memecahkan masalah kompleks, merumuskan analitik data bisnis, serta berkolaborasi dengan tim lintas disiplin ilmu.</p>
                     
                     <div class="about-stats">
                         <div class="stat-item">
-                            <h4>5+ </h4>
-                            <p>Work Experience</p>
+                            <h4>2+ Tahun</h4>
+                            <p>Coding & Projects</p>
                         </div>
                         <div class="stat-item">
                             <h4>15+</h4>
-                            <p>Committees and Organizations</p>
+                            <p>Organisasi & Kepanitiaan</p>
                         </div>
                         <div class="stat-item">
                             <h4>3+</h4>
-                            <p>Awards</p>
+                            <p>Penghargaan & Prestasi</p>
                         </div>
                     </div>
 
@@ -127,18 +135,18 @@ Saya mahasiswa aktif Semester 7 Universitas Airlangga yang suka banget dengan du
                             <strong>Nama:</strong> <span>Rafika Rahma Yunita</span>
                         </div>
                         <div class="info-item">
+                            <strong>Pendidikan:</strong> <span>D4 Teknik Informatika, Universitas Airlangga (IPK 3.66)</span>
+                        </div>
+                        <div class="info-item">
                             <strong>Email:</strong> <span>rafikary12@gmail.com</span>
                         </div>
                         <div class="info-item">
-                            <strong>Phone:</strong> <span>+62 858-5664-0590</span>
-                        </div>
-                        <div class="info-item">
-                            <strong>Lokasi:</strong> <span>Surabaya, Indonesia</span>
+                            <strong>Telepon:</strong> <span>+62 858-5664-0590</span>
                         </div>
                     </div>
 
                     <a href="assets/cv.pdf" class="btn btn-primary" download>
-                        <i class="fa fa-download"></i> Download CV
+                        <i class="fa fa-download"></i> Download CV (PDF)
                     </a>
                 </div>
                 <div class="about-image" data-aos="fade-left">
@@ -154,119 +162,190 @@ Saya mahasiswa aktif Semester 7 Universitas Airlangga yang suka banget dengan du
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Keahlian</h2>
-            <div class="skills-content">
-                <div class="skills-categories">
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                        <h3><i class="fa fa-code"></i> Machine Learning and AI</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <span>Python</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="95%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>NumPy & Pandas</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>Deployment & Inference</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90%"></div>
-                                     </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>Model Evaluation</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>Scikit-Learn</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>TensorFlow / PyTorch</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80%"></div>
-                                </div>
-                            </div>
+            
+            <!-- Tech Stack Icon Gallery -->
+            <div class="tech-gallery" data-aos="fade-up">
+                <div class="tech-icon-card python" title="Python"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                <div class="tech-icon-card react" title="React.js"><i class="fa-brands fa-react"></i><span>React</span></div>
+                <div class="tech-icon-card node" title="Node.js"><i class="fa-brands fa-node-js"></i><span>NodeJS</span></div>
+                <div class="tech-icon-card laravel" title="Laravel"><i class="fa-brands fa-laravel"></i><span>Laravel</span></div>
+                <div class="tech-icon-card mysql" title="MySQL"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+                <div class="tech-icon-card docker" title="Docker"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+                <div class="tech-icon-card github-tech" title="Git & GitHub"><i class="fa-brands fa-github"></i><span>Git & GitHub</span></div>
+                <div class="tech-icon-card html5" title="HTML5"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                <div class="tech-icon-card css3" title="CSS3 & SCSS"><i class="fa-brands fa-css3-alt"></i><span>CSS3 / SCSS</span></div>
+                <div class="tech-icon-card js" title="JavaScript & TypeScript"><i class="fa-brands fa-js"></i><span>JS / TS</span></div>
+            </div>
+
+            <!-- Skills Grid Layout -->
+            <div class="skills-grid">
+                <!-- Technical Skills Column -->
+                <div class="skills-column" data-aos="fade-right">
+                    <h3 class="skills-column-title"><i class="fa fa-cogs"></i> Technical Skills</h3>
+                    
+                    <div class="skills-sub-group">
+                        <h4>Artificial Intelligence & Data</h4>
+                        <div class="skills-tags">
+                            <span><i class="fa fa-check-circle"></i> Machine Learning</span>
+                            <span><i class="fa fa-check-circle"></i> Artificial Intelligence</span>
+                            <span><i class="fa fa-check-circle"></i> Python</span>
+                            <span><i class="fa fa-check-circle"></i> NumPy & Pandas</span>
+                            <span><i class="fa fa-check-circle"></i> Scikit-Learn</span>
+                            <span><i class="fa fa-check-circle"></i> TensorFlow / PyTorch</span>
+                            <span><i class="fa fa-check-circle"></i> Model Evaluation</span>
+                            <span><i class="fa fa-check-circle"></i> Data Analysis & Visualization</span>
+                            <span><i class="fa fa-check-circle"></i> Predictive Analytics</span>
+                            <span><i class="fa fa-check-circle"></i> Deployment & Inference</span>
                         </div>
                     </div>
 
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                        <h3><i class="fa fa-server"></i> Fullstack Development</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <span>HTML5, CSS3/SCSS</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>JavaScript / TypeScript</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>Express.js / Laravel</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="95%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>CI/CD</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>React.js</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>Node.js (REST API)</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80%"></div>
-                                </div>
-                            </div>
+                    <div class="skills-sub-group">
+                        <h4>Full-Stack Development</h4>
+                        <div class="skills-tags">
+                            <span><i class="fa fa-check-circle"></i> HTML5, CSS3, SCSS</span>
+                            <span><i class="fa fa-check-circle"></i> JavaScript / TypeScript</span>
+                            <span><i class="fa fa-check-circle"></i> React.js</span>
+                            <span><i class="fa fa-check-circle"></i> Node.js (REST API)</span>
+                            <span><i class="fa fa-check-circle"></i> Express.js</span>
+                            <span><i class="fa fa-check-circle"></i> Laravel</span>
+                            <span><i class="fa fa-check-circle"></i> API Integration</span>
+                            <span><i class="fa fa-check-circle"></i> Responsive Web Development</span>
+                            <span><i class="fa fa-check-circle"></i> CI/CD</span>
                         </div>
                     </div>
 
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                        <h3><i class="fa fa-database"></i> Database & Tools</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <span>MySQL</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>MongoDB</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>Git/GitHub</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="95%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>Docker</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80%"></div>
-                                </div>
-                            </div>
+                    <div class="skills-sub-group">
+                        <h4>Database & DevOps</h4>
+                        <div class="skills-tags">
+                            <span><i class="fa fa-check-circle"></i> MySQL</span>
+                            <span><i class="fa fa-check-circle"></i> MongoDB</span>
+                            <span><i class="fa fa-check-circle"></i> SQLite</span>
+                            <span><i class="fa fa-check-circle"></i> Git & GitHub</span>
+                            <span><i class="fa fa-check-circle"></i> Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Skills Column -->
+                <div class="skills-column" data-aos="fade-left">
+                    <h3 class="skills-column-title"><i class="fa fa-user-tie"></i> Professional Skills</h3>
+                    <div class="prof-skills-grid">
+                        <div class="prof-skill-card"><i class="fa fa-brain"></i> <span>Analytical Thinking</span></div>
+                        <div class="prof-skill-card"><i class="fa fa-puzzle-piece"></i> <span>Problem Solving</span></div>
+                        <div class="prof-skill-card"><i class="fa fa-balance-scale"></i> <span>Critical Thinking</span></div>
+                        <div class="prof-skill-card"><i class="fa fa-comments"></i> <span>Communication Skills</span></div>
+                        <div class="prof-skill-card"><i class="fa fa-users"></i> <span>Team Collaboration</span></div>
+                        <div class="prof-skill-card"><i class="fa fa-tasks"></i> <span>Project Management</span></div>
+                        <div class="prof-skill-card"><i class="fa fa-sync-alt"></i> <span>Adaptability</span></div>
+                        <div class="prof-skill-card"><i class="fa fa-graduation-cap"></i> <span>Continuous Learning</span></div>
+                        <div class="prof-skill-card"><i class="fa fa-chart-line"></i> <span>Business Understanding</span></div>
+                        <div class="prof-skill-card"><i class="fa fa-search-plus"></i> <span>Attention to Detail</span></div>
+                        <div class="prof-skill-card"><i class="fa fa-clock"></i> <span>Time Management</span></div>
+                        <div class="prof-skill-card"><i class="fa fa-file-alt"></i> <span>Presentation & Reporting</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="skills" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Pengalaman & Proyek</h2>
+            <div class="timeline">
+                <!-- PT QLCOM -->
+                <div class="timeline-container left-t" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - Present</span>
+                        <h3>AI Programmer</h3>
+                        <h4>PT QLCOM Solusi Bisnis Digital</h4>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li><strong>Face Recognition Attendance:</strong> Mengembangkan otomasi absensi karyawan berbasis biometrik.</li>
+                                <li><strong>OCR Invoice Automation:</strong> Membangun pipeline ekstraksi data tagihan komersial secara otomatis.</li>
+                                <li><strong>NLP Chatbot & Knowledge Base:</strong> Merancang bot pendukung pelanggan terintegrasi basis pengetahuan korporasi.</li>
+                                <li><strong>Sales Analytics & Risk Scoring:</strong> Membuat model prediksi target penjualan dan asesmen risiko kredit ML.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science & ML Proj -->
+                <div class="timeline-container right-t" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - 2025</span>
+                        <h3>Data Science & ML Projects</h3>
+                        <h4>Independent & Academic</h4>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li><strong>Sistem Prediksi Penyakit Jantung:</strong> Klasifikasi rekam medis pasien untuk deteksi dini risiko jantung.</li>
+                                <li><strong>Deteksi Kanker Paru:</strong> Klasifikasi survey gejala pernapasan (PulmoCare).</li>
+                                <li><strong>Panganku Reco-System:</strong> Klasterisasi K-Means menu nutrisi regional harian (Panganku).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POLDA Jatim -->
+                <div class="timeline-container left-t" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>IT & Cybersecurity Intern</h3>
+                        <h4>BID TIK POLDA JAWA TIMUR</h4>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Mengelola pemeliharaan infrastruktur jaringan polda dan server data kepolisian.</li>
+                                <li>Mempelajari implementasi perlindungan data rahasia instansi dan penanggulangan celah keamanan.</li>
+                                <li>Mengembangkan aplikasi digitalisasi insiden (Troubleshoot BIDTIK POLDA JATIM).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Short Course Malaysia -->
+                <div class="timeline-container right-t" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Mei 2025</span>
+                        <h3>IT & Smart Systems Participant</h3>
+                        <h4>International Short Course Malaysia</h4>
+                        <div class="timeline-desc">
+                            <p>Mengikuti program internasional bidang IoT, sistem cerdas, dan solusi digital kemasyarakatan di Malaysia bersama rekan mahasiswa internasional.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Matching Fund 2023 -->
+                <div class="timeline-container left-t" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jun 2023 - Apr 2024</span>
+                        <h3>Research Assistant</h3>
+                        <h4>Matching Fund Dikti Ristek x PT JASA MARGA</h4>
+                        <div class="timeline-desc">
+                            <p>Berkontribusi dalam riset nasional untuk mengembangkan <em>Genius Parking Space Detection System</em> (deteksi slot rest area tol menggunakan Object Detection YOLO/OpenCV).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DIPP UNAIR -->
+                <div class="timeline-container right-t" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Course Data Administrator</h3>
+                        <h4>DIPP Universitas Airlangga</h4>
+                        <div class="timeline-desc">
+                            <p>Melakukan inputing, validasi, dan administrasi database mata kuliah mahasiswa lintas fakultas di lingkungan Universitas Airlangga.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Private Tutoring -->
+                <div class="timeline-container left-t" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - Present</span>
+                        <h3>Private Tutor</h3>
+                        <h4>Independent Services</h4>
+                        <div class="timeline-desc">
+                            <p>Memberikan bimbingan belajar kurikulum nasional (Merdeka) dan internasional (Cambridge) untuk jenjang SD hingga SMA.</p>
                         </div>
                     </div>
                 </div>
@@ -280,27 +359,29 @@ Saya mahasiswa aktif Semester 7 Universitas Airlangga yang suka banget dengan du
             <h2 class="section-title" data-aos="fade-up">Portfolio</h2>
             <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="100">
                 <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="ai">AI & Data Science</button>
+                <button class="filter-btn" data-filter="web">Fullstack & Web</button>
+                <button class="filter-btn" data-filter="freelance">Freelance</button>
             </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                <!-- Project 1: Tootech -->
+                <div class="portfolio-item" data-category="ai web" data-aos="fade-up" data-aos-delay="100">
                     <div class="portfolio-image">
-                        <img src="assets/project1.jpg" alt="Project 1">
+                        <img src="assets/project1.jpg" alt="Tootech">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
                                 <h3>Tootech</h3>
-                                <p>Sistem Diagnosa Penyakit Gigi</p>
+                                <p>Sistem Diagnosa Penyakit Gigi Berbasis AI</p>
                                 <div class="portfolio-tech">
+                                    <span>Python</span>
                                     <span>PHP</span>
                                     <span>MySQL</span>
-                                    <span>Python</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="#" class="portfolio-link" data-project="1" title="View Project">
+                                    <a href="projects/tootech.html" class="portfolio-link-detail" title="Lihat Project">
                                         <i class="fa fa-eye"></i>
                                     </a>
-                                    <a href="#" target="_blank" title="View on GitHub">
+                                    <a href="https://github.com/rafikary" target="_blank" title="Lihat di GitHub">
                                         <i class="fa fa-github"></i>
                                     </a>
                                 </div>
@@ -309,25 +390,24 @@ Saya mahasiswa aktif Semester 7 Universitas Airlangga yang suka banget dengan du
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="ecommerce" data-aos="fade-up" data-aos-delay="200">
+                <!-- Project 2: PulmoCare -->
+                <div class="portfolio-item" data-category="ai" data-aos="fade-up" data-aos-delay="200">
                     <div class="portfolio-image">
-                        <img src="assets/project2.jpg" alt="Project 2">
+                        <img src="assets/project2.jpg" alt="PulmoCare">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
                                 <h3>PulmoCare</h3>
-                                <p>Platform Diagnosa Penyakit Kanker Paru Paru</p>
+                                <p>Platform Diagnosa Kanker Paru Paru</p>
                                 <div class="portfolio-tech">
-                                   <span>PHP</span>
                                     <span>Flask</span>
                                     <span>Python</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
+                                    <span>Machine Learning</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="#" class="portfolio-link" data-project="2" title="View Project">
+                                    <a href="projects/pulmocare.html" class="portfolio-link-detail" title="Lihat Project">
                                         <i class="fa fa-eye"></i>
                                     </a>
-                                    <a href="#" target="_blank" title="View on GitHub">
+                                    <a href="https://github.com/rafikary" target="_blank" title="Lihat di GitHub">
                                         <i class="fa fa-github"></i>
                                     </a>
                                 </div>
@@ -336,22 +416,23 @@ Saya mahasiswa aktif Semester 7 Universitas Airlangga yang suka banget dengan du
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                <!-- Project 3: PANGANKU -->
+                <div class="portfolio-item" data-category="ai" data-aos="fade-up" data-aos-delay="300">
                     <div class="portfolio-image">
-                        <img src="assets/project7.jpg" alt="Project 3">
+                        <img src="assets/project7.jpg" alt="PANGANKU">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
                                 <h3>PANGANKU</h3>
-                                <p>Aplikasi rekomendasi menu makanan nusantara berdasarkan kalori harian setiap individu</p>
+                                <p>Aplikasi Rekomendasi Menu Nusantara</p>
                                 <div class="portfolio-tech">
                                     <span>Flask</span>
                                     <span>K-Means Clustering</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="#" class="portfolio-link" data-project="3" title="View Project">
+                                    <a href="projects/panganku.html" class="portfolio-link-detail" title="Lihat Project">
                                         <i class="fa fa-eye"></i>
                                     </a>
-                                    <a href="#" target="_blank" title="View on GitHub">
+                                    <a href="https://github.com/rafikary" target="_blank" title="Lihat di GitHub">
                                         <i class="fa fa-github"></i>
                                     </a>
                                 </div>
@@ -360,23 +441,24 @@ Saya mahasiswa aktif Semester 7 Universitas Airlangga yang suka banget dengan du
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="400">
+                <!-- Project 4: Troubleshoot BIDTIK POLDA -->
+                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="400">
                     <div class="portfolio-image">
-                        <img src="assets/gambar4.jpg" alt="Project 4">
+                        <img src="assets/gambar4.jpg" alt="Troubleshoot BIDTIK">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
-                                <h3>Troubleshoot BIDTIK POLDA JAWA TIMUR</h3>
-                                <p>Sistem untuk penanganan insiden yang terjadi pada BIDTIK POLDA JAWA TIMUR agar lebih terdigitalisasi</p>
+                                <h3>Troubleshoot BIDTIK</h3>
+                                <p>Sistem Pelaporan Insiden POLDA JATIM</p>
                                 <div class="portfolio-tech">
                                     <span>Flask</span>
-                                    <span>Python</span>
-                                    <span>SQLlite</span>
+                                    <span>SQLite</span>
+                                    <span>Bootstrap</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="#" class="portfolio-link" data-project="4" title="View Project">
+                                    <a href="projects/troubleshoot-bidtik.html" class="portfolio-link-detail" title="Lihat Project">
                                         <i class="fa fa-eye"></i>
                                     </a>
-                                    <a href="#" target="_blank" title="View on GitHub">
+                                    <a href="https://github.com/rafikary" target="_blank" title="Lihat di GitHub">
                                         <i class="fa fa-github"></i>
                                     </a>
                                 </div>
@@ -384,24 +466,26 @@ Saya mahasiswa aktif Semester 7 Universitas Airlangga yang suka banget dengan du
                         </div>
                     </div>
                 </div>
-                        <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
+
+                <!-- Project 5: Smartdiabets -->
+                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
                     <div class="portfolio-image">
-                        <img src="assets/project8.jpg" alt="Project 5">
+                        <img src="assets/project8.jpg" alt="Smartdiabets">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
                                 <h3>Smartdiabets</h3>
-                                <p>Aplikasi Untuk Penderita Diabetes Melitus Tipe 2 Sebagai saran menu makanan harian</p>
+                                <p>Aplikasi Menu Penderita Diabetes Melitus</p>
                                 <div class="portfolio-tech">
-                                    <span>CSS</span>
                                     <span>HTML</span>
-                                    <span>JavaScript</span>
+                                    <span>CSS</span>
+                                    <span>JS</span>
                                     <span>PHP</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="#" class="portfolio-link" data-project="5" title="View Project">
+                                    <a href="projects/smartdiabets.html" class="portfolio-link-detail" title="Lihat Project">
                                         <i class="fa fa-eye"></i>
                                     </a>
-                                    <a href="#" target="_blank" title="View on GitHub">
+                                    <a href="https://github.com/rafikary" target="_blank" title="Lihat di GitHub">
                                         <i class="fa fa-github"></i>
                                     </a>
                                 </div>
@@ -409,24 +493,25 @@ Saya mahasiswa aktif Semester 7 Universitas Airlangga yang suka banget dengan du
                         </div>
                     </div>
                 </div>
-             <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
+
+                <!-- Project 6: Sistem Antrian BRI -->
+                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="200">
                     <div class="portfolio-image">
-                        <img src="assets/project9.jpg" alt="Project 6">
+                        <img src="assets/project9.jpg" alt="Sistem Antrian BRI">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
                                 <h3>Sistem Antrian BRI</h3>
-                                <p>Aplikasi Untuk Antrian Bank BRI</p>
+                                <p>Aplikasi Antrean Bank BRI Cabang</p>
                                 <div class="portfolio-tech">
                                     <span>Laravel</span>
                                     <span>PHP</span>
                                     <span>MySQL</span>
-                                    <span>API</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="#" class="portfolio-link" data-project="6" title="View Project">
+                                    <a href="projects/antrian-bri.html" class="portfolio-link-detail" title="Lihat Project">
                                         <i class="fa fa-eye"></i>
                                     </a>
-                                    <a href="#" target="_blank" title="View on GitHub">
+                                    <a href="https://github.com/rafikary" target="_blank" title="Lihat di GitHub">
                                         <i class="fa fa-github"></i>
                                     </a>
                                 </div>
@@ -434,57 +519,221 @@ Saya mahasiswa aktif Semester 7 Universitas Airlangga yang suka banget dengan du
                         </div>
                     </div>
                 </div>
-        </div> 
 
-        <!-- CTA tambahan di bawah portfolio -->
-<div class="portfolio-cta" data-aos="fade-up">
-    <p>Project yang tampil di sini cuma sebagian kecil dari pengalaman yang pernah aku kerjakan. Kalau kamu ingin lihat versi lengkap mulai dari pengalaman kerja, organisasi, sampai detail tech stack, bisa langsung cek CV-ku ya.</p>
-    <a href="assets/cv.pdf" class="btn btn-primary" download>
-        <i class="fa fa-download"></i> Download CV Lengkap
-    </a>
-</div>
-
-    </section>
-
-    <!-- Certifications Section (baru) -->
-    <section id="certifications" class="portfolio certifications">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Sertifikasi</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="certificate" data-aos="fade-up" data-aos-delay="100">
+                <!-- Project 7: Genius Parking Space -->
+                <div class="portfolio-item" data-category="ai" data-aos="fade-up" data-aos-delay="300">
                     <div class="portfolio-image">
-                        <img src="assets/cert1.jpg" alt="Sertifikat 1">
+                        <img src="assets/project3.jpg" alt="Genius Parking">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
-                                <h3>Data Scientist Certification</h3>
-                                <p>Bersertifikat Data Scientist (BNSP), kompetensi meliputi pengumpulan data, pembersihan data, feature engineering, pembangunan model machine learning, dan evaluasi performa model untuk menghasilkan solusi berbasis data.</p>
+                                <h3>Genius Parking System</h3>
+                                <p>Deteksi Slot Parkir Rest Area Jasa Marga</p>
                                 <div class="portfolio-tech">
-                                    <span>BADAN NASIONAL SERTIFIKASI PROFESI</span>
-                                    <span>Juli 2025</span>
+                                    <span>Python</span>
+                                    <span>YOLO / OpenCV</span>
+                                    <span>IoT</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="projects/genius-parking.html" class="portfolio-link-detail" title="Lihat Project">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/rafikary" target="_blank" title="Lihat di GitHub">
+                                        <i class="fa fa-github"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="certificate" data-aos="fade-up" data-aos-delay="200">
+                <!-- Project 8: E-Parfume E-Commerce -->
+                <div class="portfolio-item" data-category="freelance" data-aos="fade-up" data-aos-delay="400">
                     <div class="portfolio-image">
-                        <img src="assets/cert2.jpg" alt="Sertifikat 2">
+                        <img src="assets/project5.jpg" alt="E-Parfume E-Commerce">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
-                                <h3>Code Generation and Optimization</h3>
-                                <p>Program intensif</p>
+                                <h3>E-Parfume E-Commerce</h3>
+                                <p>Website Toko Online Parfum Eksklusif</p>
                                 <div class="portfolio-tech">
-                                    <span>IBM</span>
-                                    <span>2025</span>
+                                    <span>Laravel</span>
+                                    <span>MySQL</span>
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="projects/eparfume.html" class="portfolio-link-detail" title="Lihat Project">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/rafikary" target="_blank" title="Lihat di GitHub">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: PET Shop E-Commerce -->
+                <div class="portfolio-item" data-category="freelance" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="assets/project6.jpg" alt="PET Shop E-Commerce">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Pet Shop E-Commerce</h3>
+                                <p>Toko Supplies & Booking Grooming Online</p>
+                                <div class="portfolio-tech">
+                                    <span>Laravel</span>
+                                    <span>MySQL</span>
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="projects/petshop.html" class="portfolio-link-detail" title="Lihat Project">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/rafikary" target="_blank" title="Lihat di GitHub">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10: Furnivogue E-Commerce -->
+                <div class="portfolio-item" data-category="freelance" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="assets/project8.jpg" alt="Furnivogue E-Commerce">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Furnivogue E-Commerce</h3>
+                                <p>Toko Furnitur Modern Scandinavian</p>
+                                <div class="portfolio-tech">
+                                    <span>Laravel</span>
+                                    <span>MySQL</span>
+                                    <span>API Kurir</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="projects/furnivogue.html" class="portfolio-link-detail" title="Lihat Project">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/rafikary" target="_blank" title="Lihat di GitHub">
+                                        <i class="fa fa-github"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+        <!-- CTA tambahan di bawah portfolio -->
+        <div class="portfolio-cta" data-aos="fade-up">
+            <p>Proyek yang tampil di sini hanyalah sebagian dari pengalaman yang pernah saya kerjakan. Jika Anda ingin melihat rincian riwayat lengkap beserta detail tech stack, silakan unduh CV saya.</p>
+            <a href="assets/cv.pdf" class="btn btn-primary" download>
+                <i class="fa fa-download"></i> Download CV Lengkap (PDF)
+            </a>
+        </div>
+        </div> <!-- Closing container div -->
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="portfolio">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Sertifikasi & Penghargaan</h2>
+            
+            <div class="cert-grid">
+                <!-- Cert 1: BNSP -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-badge"><i class="fa fa-certificate"></i></div>
+                    <div class="cert-issuer">Badan Nasional Sertifikasi Profesi</div>
+                    <div class="cert-name">Certified Data Scientist</div>
+                    <div class="cert-date">Lisensi Resmi - 2025</div>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+                        Kompetensi teruji meliputi data collection, data cleaning, feature engineering, predictive modeling, serta evaluasi performa model machine learning.
+                    </p>
+                </div>
+
+                <!-- Cert 2: IBM -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-badge"><i class="fa fa-code"></i></div>
+                    <div class="cert-issuer">IBM Granite</div>
+                    <div class="cert-name">Code Generation & Optimization</div>
+                    <div class="cert-date">Sertifikat Internasional - 2025</div>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+                        Fokus pelatihan pada optimalisasi performa baris kode pemrograman dan penerapan asisten AI IBM Granite untuk efisiensi software development.
+                    </p>
+                </div>
+
+                <!-- Award: MAWAPRES -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-badge"><i class="fa fa-trophy"></i></div>
+                    <div class="cert-issuer">Fakultas Vokasi UNAIR</div>
+                    <div class="cert-name">Mahasiswa Berprestasi (MAWAPRES)</div>
+                    <div class="cert-date">Penghargaan Akademik - 2023</div>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+                        Terpilih sebagai perwakilan Mahasiswa Berprestasi Program Studi Teknik Informatika untuk berkompetisi di tingkat Fakultas.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Organizations & Committees Section -->
+    <section id="organizations" class="about" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Organisasi & Kepanitiaan</h2>
+            <div class="organizations-grid">
+                <div class="org-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="org-title">HIMTI CARES 2023</div>
+                    <div class="org-role">Ketua Pelaksana</div>
+                    <div class="org-date">September 2023</div>
+                    <div class="org-desc">Memimpin pengabdian masyarakat di desa Sidoarjo, merancang digitalisasi pemasaran UMKM lokal untuk meningkatkan pemahaman ekonomi kreatif.</div>
+                </div>
+                <div class="org-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="org-title">BEM Fakultas Vokasi UNAIR</div>
+                    <div class="org-role">Staf Pengabdian Masyarakat & Sosial</div>
+                    <div class="org-date">2023</div>
+                    <div class="org-desc">Terlibat aktif dalam perancangan program pelayanan sosial masyarakat dan panitia pelaksana berbagai agenda kemanusiaan fakultas.</div>
+                </div>
+                <div class="org-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="org-title">Airlangga International Conference</div>
+                    <div class="org-role">Staf Hubungan Internasional</div>
+                    <div class="org-date">November 2023</div>
+                    <div class="org-desc">Membantu memastikan kenyamanan delegasi mahasiswa internasional dan mengoordinasikan komunikasi efektif antar negara.</div>
+                </div>
+                <div class="org-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="org-title">AMERTA Universitas Airlangga</div>
+                    <div class="org-role">Staf Hubungan Masyarakat</div>
+                    <div class="org-date">Agustus 2023</div>
+                    <div class="org-desc">Bekerja sama dengan Direktorat Pendidikan UNAIR dalam menyambut mahasiswa baru, mengelola arus komunikasi dan kehumasan.</div>
+                </div>
+                <div class="org-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="org-title">HIMA Teknik Informatika</div>
+                    <div class="org-role">Sekretaris Departemen</div>
+                    <div class="org-date">2022 - Present</div>
+                    <div class="org-desc">Mengatur administrasi korespondensi departemen, merapikan dokumen kerja, dan mendukung koordinasi agenda asosiasi mahasiswa.</div>
+                </div>
+                <div class="org-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="org-title">MAPANZA Universitas Airlangga</div>
+                    <div class="org-role">Staf Magang</div>
+                    <div class="org-date">2022</div>
+                    <div class="org-desc">Aktif dalam penyuluhan bahaya penyalahgunaan narkoba dan edukasi preventif penyebaran HIV/AIDS di lingkungan kampus.</div>
+                </div>
+                <div class="org-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="org-title">INISIALISASI 2023</div>
+                    <div class="org-role">Koordinator Kesekretariatan</div>
+                    <div class="org-date">2023</div>
+                    <div class="org-desc">Mengatur perizinan, administrasi pendaftaran, serta distribusi materi pengenalan untuk mahasiswa baru Teknik Informatika.</div>
+                </div>
+                <div class="org-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="org-title">HIMTI CARES VOL 2</div>
+                    <div class="org-role">Staf Pelaksana</div>
+                    <div class="org-date">September 2023</div>
+                    <div class="org-desc">Membantu proses pembuatan website profil desa Mojokerto guna meningkatkan eksposur keunikan lokal ke ranah publik.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -600,7 +849,6 @@ Saya mahasiswa aktif Semester 7 Universitas Airlangga yang suka banget dengan du
     </button>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="js/script.js"></script>
     <script src="js/contact-form.js"></script>

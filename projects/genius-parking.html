@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Parking Space Detection System - Rafika Rahma Yunita</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/project-detail.css">
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <div class="bg-glow-secondary"></div>
+
+    <!-- Navigation Header -->
+    <header class="nav-detail">
+        <a href="../index.html#portfolio" class="back-btn">
+            <i class="fa fa-arrow-left"></i> Kembali Ke Portfolio
+        </a>
+        <div class="brand-name">Rafika Ry</div>
+        <button class="theme-switch-btn" id="theme-toggle" title="Toggle Theme">🌙</button>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container">
+        <!-- Project Header -->
+        <div class="project-header">
+            <span class="project-category">IoT & Computer Vision (Research)</span>
+            <h1 class="project-title">Genius Parking System</h1>
+            <p class="project-subtitle">Sistem Deteksi Slot Parkir Rest Area Berbasis Computer Vision dan IoT - Kolaborasi Riset Matching Fund Dikti Ristek Bersama PT JASA MARGA PERSERO TBK.</p>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="project-grid">
+            <!-- Left Side Details -->
+            <div class="project-details-main">
+                <div class="card">
+                    <div class="project-media">
+                        <!-- Project Image -->
+                        <img src="../assets/project3.jpg" alt="Genius Parking Project Showcase">
+                    </div>
+                    
+                    <div class="card-title">
+                        <i class="fa fa-info-circle"></i> Deskripsi Proyek
+                    </div>
+                    <div class="project-desc">
+                        <p><strong>Genius Parking Space Detection System</strong> merupakan proyek riset terapan skala nasional hasil hibah Matching Fund Kedaireka 2023 dari Direktorat Jenderal Pendidikan Tinggi (DIKTI) bekerjasama dengan BUMN pengelola jalan tol, <strong>PT Jasa Marga Persero Tbk.</strong> Jakarta.</p>
+                        <p>Tujuan utama proyek ini adalah mendigitalisasi pemantauan ketersediaan slot parkir di rest area jalan tol guna mencegah penumpukan kendaraan. Sistem menggunakan kamera CCTV yang dipasang di rest area untuk menangkap gambar secara real-time. Gambar tersebut diproses menggunakan algoritma deep learning pendeteksi objek (seperti YOLO dan OpenCV) untuk menentukan slot mana saja yang telah terisi (occupied) atau masih kosong (vacant).</p>
+                        <p>Data status parkir tersebut kemudian disinkronisasikan ke server pusat melalui web API, yang selanjutnya dikirim ke signage digital fisik di depan gerbang rest area dan aplikasi web pantau admin.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fa fa-star"></i> Fitur Utama
+                    </div>
+                    <ul class="feature-list">
+                        <li><strong>Deteksi Parkir Real-time:</strong> Computer vision untuk mendeteksi mobil pada garis parkir di bawah berbagai kondisi cuaca dan pencahayaan.</li>
+                        <li><strong>Integrasi Papan LED Fisik:</strong> Mengirimkan sinyal ketersediaan slot sisa secara langsung ke papan digital fisik di area gerbang masuk rest area.</li>
+                        <li><strong>Admin Web Dashboard:</strong> Peta visual layout parkir interaktif yang memberikan status slot merah (terisi) / hijau (kosong) bagi manajemen rest area.</li>
+                        <li><strong>Analisis Densitas Rest Area:</strong> Rekaman log masuk-keluar untuk mengidentifikasi jam sibuk rest area tol.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Side Sidebar Info -->
+            <div class="project-sidebar">
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fa fa-tasks"></i> Detail Informasi
+                    </div>
+                    <table class="info-table">
+                        <tr>
+                            <td class="info-label">Peran</td>
+                            <td class="info-value">Research Assistant & Software Integrator</td>
+                        </tr>
+                        <tr>
+                            <td class="info-label">Klien / Mitra</td>
+                            <td class="info-value">PT JASA MARGA PERSERO TBK & Dikti Ristek</td>
+                        </tr>
+                        <tr>
+                            <td class="info-label">Tahun</td>
+                            <td class="info-value">Jun 2023 - April 2024</td>
+                        </tr>
+                        <tr>
+                            <td class="info-label">Tech Stack</td>
+                            <td class="info-value">
+                                <div class="tech-container">
+                                    <span class="tech-tag">Python (YOLO / OpenCV)</span>
+                                    <span class="tech-tag">IoT Gateway</span>
+                                    <span class="tech-tag">RESTful API</span>
+                                    <span class="tech-tag">PHP / MySQL</span>
+                                    <span class="tech-tag">HTML5 / CSS3 / JavaScript</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fa fa-qrcode"></i> Scan Project
+                    </div>
+                    <div class="scan-container">
+                        <div class="qr-wrapper">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://github.com/rafikary" alt="QR Code GitHub">
+                        </div>
+                        <p class="scan-text">Scan kode QR di atas untuk langsung menuju repository GitHub proyek ini.</p>
+                        
+                        <div class="btn-group">
+                            <a href="https://github.com/rafikary" target="_blank" rel="noopener" class="btn btn-primary">
+                                <i class="fab fa-github"></i> Kunjungi GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JS Logic -->
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            toggle.innerHTML = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+        toggle.innerHTML = savedTheme === 'dark' ? '☀️' : '🌙';
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Parfume E-Commerce Website - Rafika Rahma Yunita</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/project-detail.css">
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <div class="bg-glow-secondary"></div>
+
+    <!-- Navigation Header -->
+    <header class="nav-detail">
+        <a href="../index.html#portfolio" class="back-btn">
+            <i class="fa fa-arrow-left"></i> Kembali Ke Portfolio
+        </a>
+        <div class="brand-name">Rafika Ry</div>
+        <button class="theme-switch-btn" id="theme-toggle" title="Toggle Theme">🌙</button>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container">
+        <!-- Project Header -->
+        <div class="project-header">
+            <span class="project-category">E-Commerce & Freelance</span>
+            <h1 class="project-title">E-Parfume E-Commerce</h1>
+            <p class="project-subtitle">Platform Pemasaran Toko Parfum Online dengan Nuansa Desain yang Elegant, Clean, dan Mewah.</p>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="project-grid">
+            <!-- Left Side Details -->
+            <div class="project-details-main">
+                <div class="card">
+                    <div class="project-media">
+                        <!-- Project Image -->
+                        <img src="../assets/project5.jpg" alt="E-Parfume Project Showcase">
+                    </div>
+                    
+                    <div class="card-title">
+                        <i class="fa fa-info-circle"></i> Deskripsi Proyek
+                    </div>
+                    <div class="project-desc">
+                        <p><strong>E-Parfume E-Commerce Website</strong> adalah proyek lepas (freelance) untuk membuat toko online parfum eksklusif. Konsep utama dari website ini adalah menonjolkan aspek estetika kemewahan produk melalui visualisasi gambar yang tajam, tipografi modern, dan navigasi yang sangat minimalis namun efisien.</p>
+                        <p>Dari sisi backend, saya mengimplementasikan sistem manajemen inventaris, integrasi transaksi pembayaran, serta notifikasi email otomatis bagi pembeli ketika order berhasil dibuat. Halaman admin dilengkapi dengan bagan analitik penjualan mingguan demi mempermudah pemilik bisnis memantau parfum terlaris.</p>
+                        <p>Menggunakan Bootstrap yang dikombinasikan dengan stylesheet khusus membuat website ini ter-render dengan sempurna di ponsel cerdas maupun komputer desktop.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fa fa-star"></i> Fitur Utama
+                    </div>
+                    <ul class="feature-list">
+                        <li><strong>Elegant Catalog & Filter:</strong> Katalog wewangian dengan pengelompokan notes aroma (Floral, Woody, Citrus, Oriental, dll).</li>
+                        <li><strong>Shopping Cart & Checkout:</strong> Alur belanja satu halaman yang ringkas dengan dukungan form checkout intuitif.</li>
+                        <li><strong>Admin Order & Stock Tracker:</strong> Panel administrasi untuk mengupdate stok parfum, menambahkan produk baru, dan mencatat pengiriman barang.</li>
+                        <li><strong>Fitur Ulasan Interaktif:</strong> Sistem ulasan bintang dan testimoni pembeli berfoto untuk meningkatkan kepercayaan toko.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Side Sidebar Info -->
+            <div class="project-sidebar">
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fa fa-tasks"></i> Detail Informasi
+                    </div>
+                    <table class="info-table">
+                        <tr>
+                            <td class="info-label">Peran</td>
+                            <td class="info-value">Fullstack Freelance Developer</td>
+                        </tr>
+                        <tr>
+                            <td class="info-label">Klien</td>
+                            <td class="info-value">Freelance Project</td>
+                        </tr>
+                        <tr>
+                            <td class="info-label">Tahun</td>
+                            <td class="info-value">2024</td>
+                        </tr>
+                        <tr>
+                            <td class="info-label">Tech Stack</td>
+                            <td class="info-value">
+                                <div class="tech-container">
+                                    <span class="tech-tag">Laravel / PHP</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">HTML5 / CSS3</span>
+                                    <span class="tech-tag">Bootstrap 5</span>
+                                    <span class="tech-tag">JavaScript (ES6)</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fa fa-qrcode"></i> Scan Project
+                    </div>
+                    <div class="scan-container">
+                        <div class="qr-wrapper">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://github.com/rafikary" alt="QR Code GitHub">
+                        </div>
+                        <p class="scan-text">Scan kode QR di atas untuk langsung menuju repository GitHub proyek ini.</p>
+                        
+                        <div class="btn-group">
+                            <a href="https://github.com/rafikary" target="_blank" rel="noopener" class="btn btn-primary">
+                                <i class="fab fa-github"></i> Kunjungi GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JS Logic -->
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            toggle.innerHTML = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+        toggle.innerHTML = savedTheme === 'dark' ? '☀️' : '🌙';
+    </script>
+</body>
+</html>
