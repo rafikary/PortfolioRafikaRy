@@ -144,18 +144,21 @@
 
                 <div class="card">
                     <div class="card-title">
-                        <i class="fa fa-qrcode"></i> Scan Project
+                        <i class="fa fa-lock"></i> Akses Proyek
                     </div>
                     <div class="scan-container">
-                        <div class="qr-wrapper">
-                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://github.com/rafikary" alt="QR Code GitHub">
+                        <div class="qr-wrapper" style="background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.2); padding: 25px; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 15px;">
+                            <i class="fa fa-shield-alt" style="font-size: 2.8rem; color: #ef4444; margin-bottom: 10px;"></i>
+                            <span style="font-weight: 600; font-size: 0.85rem; color: #ef4444; text-transform: uppercase; letter-spacing: 1px;">Akses Terbatas</span>
                         </div>
-                        <p class="scan-text">Scan kode QR di atas untuk langsung menuju repository GitHub proyek ini.</p>
+                        <p class="scan-text" style="font-size: 0.85rem; line-height: 1.5; text-align: center; color: var(--text-secondary);">
+                            Kode sumber dan dokumentasi teknis proyek ini bersifat privat sesuai kebijakan kerahasiaan data (Non-Disclosure Agreement / NDA) PT Berkat Chandra.
+                        </p>
                         
-                        <div class="btn-group">
-                            <a href="https://github.com/rafikary" target="_blank" rel="noopener" class="btn btn-primary">
-                                <i class="fab fa-github"></i> Kunjungi GitHub
-                            </a>
+                        <div class="btn-group" style="width: 100%; margin-top: 15px;">
+                            <span class="btn btn-secondary" style="cursor: not-allowed; opacity: 0.7; width: 100%; display: inline-flex; justify-content: center; align-items: center; gap: 8px;" title="Repositori bersifat privat (NDA)">
+                                <i class="fa fa-lock"></i> Private Repository
+                            </span>
                         </div>
                     </div>
                 </div>
