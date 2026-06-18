@@ -230,12 +230,12 @@ const portfolioData = {
         github: 'https://github.com/rafikary'
     },
     5: {
-        title: 'Admin Cakeshop',
-        description: 'Aplikasi untuk admin mengelola dan membuat laporan toko kue. Sistem ini dilengkapi dengan fitur manajemen produk, tracking pesanan, laporan penjualan, dan dashboard analytics untuk membantu owner dalam mengambil keputusan bisnis.',
-        image: 'assets/project5.jpg',
-        tech: ['CSS', 'HTML', 'JavaScript', 'PHP'],
-        demo: 'https://github.com/rafikary',
-        github: 'https://github.com/rafikary'
+        title: 'Sales & BI Platform',
+        description: 'AI-Powered Sales & Business Intelligence Platform adalah sistem analitik dan monitoring bisnis berbasis web yang mengintegrasikan data penjualan, pelanggan, produk, wilayah, stok, piutang, dan aktivitas sales secara real-time dengan dukungan AI Business Assistant.',
+        image: 'assets/project8.png',
+        tech: ['Python', 'SQL', 'Machine Learning', 'Business Intelligence'],
+        demo: 'projects/smartdiabets.html',
+        github: 'javascript:void(0)'
     },
     6: {
         title: 'RumahVelg',
