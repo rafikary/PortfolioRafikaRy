@@ -567,6 +567,26 @@ class ResponsiveHandler {
                     }
                 });
             });
+
+            // Toggle active state for stat-item on mobile devices
+            document.querySelectorAll('.stat-item').forEach(item => {
+                item.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.stopPropagation();
+                        const wasActive = this.classList.contains('active');
+                        // Reset other stat-items
+                        document.querySelectorAll('.stat-item').forEach(el => el.classList.remove('active'));
+                        if (!wasActive) {
+                            this.classList.add('active');
+                        }
+                    }
+                });
+            });
+
+            // Tap outside to close active stat detail
+            document.addEventListener('click', () => {
+                document.querySelectorAll('.stat-item').forEach(el => el.classList.remove('active'));
+            });
         }
     }
     
