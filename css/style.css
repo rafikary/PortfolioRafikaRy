@@ -228,8 +228,6 @@ body {
 }
 
 .navbar.scrolled {
-    top: 10px;
-    width: 95%;
     border-color: rgba(139, 92, 246, 0.3);
     box-shadow: var(--shadow-glow);
 }
