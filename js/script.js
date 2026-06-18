@@ -5,7 +5,6 @@ const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const themeToggle = document.getElementById('theme-toggle');
 const backToTop = document.getElementById('back-to-top');
-const contactForm = document.getElementById('contact-form');
 const portfolioModal = document.getElementById('portfolio-modal');
 const portfolioLinks = document.querySelectorAll('.portfolio-link');
 const filterBtns = document.querySelectorAll('.filter-btn');
@@ -271,43 +270,6 @@ window.addEventListener('click', (e) => {
     }
 });
 
-// ===== CONTACT FORM =====
-contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    const formData = new FormData(contactForm);
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
-    
-    // Show loading state
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengirim...';
-    submitBtn.disabled = true;
-    
-    try {
-        // Send form data to PHP backend
-        const response = await fetch('contact.php', {
-            method: 'POST',
-            body: formData
-        });
-        
-        const result = await response.json();
-        
-        if (result.success) {
-            showNotification(result.message, 'success');
-            contactForm.reset();
-        } else {
-            showNotification(result.message, 'error');
-        }
-        
-    } catch (error) {
-        console.error('Contact form error:', error);
-        showNotification('Terjadi kesalahan jaringan. Silakan coba lagi.', 'error');
-    } finally {
-        // Reset button
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-    }
-});
 
 // ===== NOTIFICATION SYSTEM =====
 function showNotification(message, type = 'info') {
@@ -478,10 +440,6 @@ portfolioLinks.forEach(link => {
     });
 });
 
-// Track contact form submissions
-contactForm.addEventListener('submit', () => {
-    trackEvent('Contact', 'Form Submit', 'Contact Form');
-});
 
 // ===== RESPONSIVE UTILITIES =====
 class ResponsiveHandler {
@@ -672,16 +630,14 @@ function monitorPerformance() {
     }
 }
 
-// ===== SERVICE WORKER REGISTRATION =====
+// ===== SERVICE WORKER CLEANUP =====
+// Unregisters any service worker since static page doesn't need one and avoids rogue caching
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-            .then(registration => {
-                console.log('SW registered: ', registration);
-            })
-            .catch(registrationError => {
-                console.log('SW registration failed: ', registrationError);
-            });
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for(let registration of registrations) {
+            registration.unregister();
+            console.log('Unregistered active service worker');
+        }
     });
 }
 

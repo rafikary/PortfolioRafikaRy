@@ -97,6 +97,32 @@
     background: rgba(139, 92, 246, 0.15);
 }
 
+[data-theme="light"] .cert-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(243, 232, 255, 0.6) 100%);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.05);
+}
+
+[data-theme="light"] .cert-card:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.12), 0 0 20px rgba(217, 70, 239, 0.1);
+}
+
+[data-theme="light"] .cert-badge {
+    background: rgba(139, 92, 246, 0.08);
+}
+
+[data-theme="light"] .timeline-content {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(243, 232, 255, 0.6) 100%);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.05);
+}
+
+[data-theme="light"] .timeline-content:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.12), 0 0 20px rgba(217, 70, 239, 0.1);
+}
+
 /* ===== RESET & BASE STYLES ===== */
 * {
     margin: 0;
@@ -997,12 +1023,30 @@ section {
 }
 
 .timeline-content {
-    background: var(--bg-glass);
-    border: 1px solid var(--border-glass);
-    border-radius: 20px;
-    padding: 24px;
-    box-shadow: var(--shadow-medium);
+    background: linear-gradient(135deg, rgba(13, 9, 30, 0.8) 0%, rgba(20, 12, 45, 0.4) 100%);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    border-radius: 24px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
     transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.timeline-content:hover::before {
+    opacity: 0.8;
 }
 
 .timeline-container:hover::after {
@@ -1011,9 +1055,9 @@ section {
 }
 
 .timeline-content:hover {
-    border-color: var(--primary-color);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-glow);
+    border-color: var(--secondary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.2), 0 0 20px rgba(217, 70, 239, 0.15);
 }
 
 .timeline-date {
@@ -1101,13 +1145,13 @@ section {
 
 .portfolio-item {
     position: relative;
-    border-radius: 16px;
+    border-radius: 20px;
     overflow: hidden;
-    border: 1px solid var(--border-glass);
-    box-shadow: var(--shadow-medium);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     transition: var(--transition);
     padding-top: 30px;
-    background: rgba(255, 255, 255, 0.02);
+    background: linear-gradient(135deg, rgba(13, 9, 30, 0.85) 0%, rgba(20, 12, 45, 0.5) 100%);
 }
 
 .portfolio-item::before {
@@ -1137,7 +1181,9 @@ section {
 }
 
 [data-theme="light"] .portfolio-item {
-    background: rgba(0, 0, 0, 0.02);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(243, 232, 255, 0.6) 100%);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.05);
 }
 
 [data-theme="light"] .portfolio-item::before {
@@ -1146,8 +1192,8 @@ section {
 
 .portfolio-item:hover {
     transform: translateY(-8px);
-    border-color: var(--primary-color);
-    box-shadow: var(--shadow-glow);
+    border-color: var(--secondary-color);
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.25), 0 0 20px rgba(217, 70, 239, 0.15);
 }
 
 .portfolio-image {
@@ -1284,28 +1330,55 @@ section {
 }
 
 .cert-card {
-    background: var(--bg-glass);
-    border: 1px solid var(--border-glass);
-    border-radius: 22px;
-    padding: 30px;
+    background: linear-gradient(135deg, rgba(13, 9, 30, 0.8) 0%, rgba(30, 15, 60, 0.4) 100%);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    border-radius: 24px;
+    padding: 32px;
     position: relative;
     overflow: hidden;
     transition: var(--transition);
-    box-shadow: var(--shadow-medium);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.cert-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-primary);
+    opacity: 0.8;
 }
 
 .cert-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--primary-color);
-    box-shadow: var(--shadow-glow);
+    transform: translateY(-8px);
+    border-color: var(--secondary-color);
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.25), 0 0 20px rgba(217, 70, 239, 0.15);
 }
 
 .cert-badge {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 1.6rem;
-    color: var(--primary-color);
+    top: 25px;
+    right: 25px;
+    width: 44px;
+    height: 44px;
+    background: rgba(139, 92, 246, 0.15);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.cert-card:hover .cert-badge {
+    background: var(--gradient-primary);
+    color: #fff;
+    border-color: transparent;
+    transform: rotate(360deg);
 }
 
 .cert-issuer {
@@ -1382,10 +1455,9 @@ section {
 
 /* ===== CONTACT SECTION ===== */
 .contact-content {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 4rem;
-    align-items: start;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .contact-info h3 {
@@ -1398,95 +1470,60 @@ section {
 .contact-info p {
     font-size: 1.05rem;
     color: var(--text-secondary);
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-items {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 20px;
-    background: rgba(255,255,255,0.01);
+    padding: 24px;
+    background: var(--bg-glass);
     border: 1px solid var(--border-glass);
-    border-radius: 18px;
+    border-radius: 20px;
     transition: var(--transition);
+    text-align: left;
+    box-shadow: var(--shadow-medium);
 }
 
 .contact-item:hover {
-    transform: translateX(6px);
+    transform: translateY(-5px);
     border-color: var(--primary-color);
+    box-shadow: var(--shadow-glow);
 }
 
 .contact-icon {
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
     background: var(--gradient-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    flex-shrink: 0;
 }
 
 .contact-details h4 {
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 .contact-details p {
     font-size: 0.95rem;
     color: var(--text-secondary);
-}
-
-.contact-form {
-    background: var(--bg-glass);
-    border: 1px solid var(--border-glass);
-    padding: 40px;
-    border-radius: 24px;
-    box-shadow: var(--shadow-medium);
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 14px 18px;
-    border: 1px solid var(--border-glass);
-    border-radius: 14px;
-    background: rgba(255, 255, 255, 0.02);
-    color: var(--text-primary);
-    font-family: inherit;
-    font-size: 0.95rem;
-    transition: var(--transition);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    background: rgba(139, 92, 246, 0.03);
-    box-shadow: 0 0 10px rgba(139, 92, 246, 0.1);
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 140px;
-}
-
-.contact-form .btn {
-    width: 100%;
 }
 
 /* ===== FOOTER ===== */
@@ -1613,9 +1650,8 @@ section {
         margin: 0 auto;
     }
     
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 3rem;
+    .contact-items {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1668,6 +1704,9 @@ section {
     .hero-content h1 {
         font-size: 2.8rem;
     }
+    .contact-items {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1704,9 +1743,6 @@ section {
         left: 5px;
     }
 
-    .contact-form {
-        padding: 20px;
-    }
 }
 
 /* ===== CUSTOM SELECTION & SCROLLBAR ===== */
