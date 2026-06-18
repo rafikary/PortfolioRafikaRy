@@ -214,12 +214,12 @@ const portfolioData = {
         github: 'https://github.com/rafikary'
     },
     3: {
-        title: 'Dentist',
-        description: 'Aplikasi mobile untuk pemesanan dokter gigi dengan fitur scheduling yang fleksibel, profile dokter lengkap, dan sistem notifikasi appointment. Dibangun dengan Flutter untuk cross-platform compatibility dan Laravel sebagai backend API.',
-        image: 'assets/project3.jpg',
-        tech: ['Flutter', 'Laravel'],
-        demo: 'https://github.com/rafikary',
-        github: 'https://github.com/rafikary'
+        title: 'Diabets Care',
+        description: 'Diabets Care adalah sistem rekomendasi menu harian berbasis web yang dirancang untuk membantu penderita Diabetes Melitus Tipe 2 menentukan pilihan makanan yang sesuai dengan kebutuhan nutrisi harian menggunakan Hybrid Filtering.',
+        image: 'assets/project3.png',
+        tech: ['Python', 'Flask', 'SQLite', 'NumPy', 'Pandas', 'SciPy'],
+        demo: 'https://github.com/rafikary/diabets-care',
+        github: 'https://github.com/rafikary/diabets-care'
     },
     4: {
         title: 'E-Commerce Toko Parfum',
