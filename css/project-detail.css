@@ -415,3 +415,52 @@ body {
     color: var(--primary-color);
     border-color: var(--primary-color);
 }
+
+@media (max-width: 768px) {
+    .nav-detail {
+        padding: 0 20px;
+        height: 70px;
+    }
+    
+    .project-title {
+        font-size: 2rem;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-detail {
+        padding: 0 12px;
+    }
+    
+    .back-btn {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+    
+    .brand-name {
+        font-size: 1rem;
+    }
+    
+    .project-title {
+        font-size: 1.75rem;
+    }
+    
+    .container {
+        padding: 0 12px;
+        margin-top: 25px;
+    }
+    
+    .info-label {
+        width: 40%;
+        font-size: 0.85rem;
+    }
+    
+    .info-value {
+        width: 60%;
+        font-size: 0.85rem;
+    }
+}
