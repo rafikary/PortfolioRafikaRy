@@ -222,12 +222,12 @@ const portfolioData = {
         github: 'https://github.com/rafikary/diabets-care'
     },
     4: {
-        title: 'E-Commerce Toko Parfum',
-        description: 'Aplikasi pemasaran toko parfum dengan nuansa simple dan elegant. Fitur lengkap mulai dari katalog produk, sistem pembayaran, manajemen inventory, hingga dashboard admin untuk monitoring penjualan.',
-        image: 'assets/project4.jpg',
-        tech: ['Laravel', 'API', 'PHP'],
-        demo: 'https://github.com/rafikary',
-        github: 'https://github.com/rafikary'
+        title: 'SIGAP TIK',
+        description: 'SIGAP TIK adalah platform berbasis web yang dikembangkan untuk membantu standarisasi proses penanganan gangguan layanan Teknologi Informasi dan Komunikasi (TIK) di lingkungan Polda Jawa Timur sebagai panduan troubleshooting interaktif berbasis SOP.',
+        image: 'assets/gambar4.jpg',
+        tech: ['Python', 'Flask', 'SQLite', 'Jinja2'],
+        demo: 'projects/troubleshoot-bidtik.html',
+        github: 'javascript:void(0)'
     },
     5: {
         title: 'Sales & BI Platform',
