@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (contactForm) {
         // Update form action untuk FormSubmit.co
-        contactForm.action = 'https://formsubmit.co/rafikary12@gmail.com';
+        contactForm.action = 'https://formsubmit.co/rafika1206@gmail.com';
         contactForm.method = 'POST';
         
         // Add hidden fields for FormSubmit configuration
