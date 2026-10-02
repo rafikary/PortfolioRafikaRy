@@ -946,6 +946,38 @@ section {
 .tech-icon-card.js span { color: var(--text-primary); }
 .tech-icon-card.js:hover { border-color: #f7df1e; box-shadow: 0 0 20px rgba(247, 223, 30, 0.45); }
 
+/* AI & Data Science Tech Icons */
+.tech-icon-card.tensorflow { border-color: rgba(255, 115, 0, 0.4); box-shadow: 0 0 10px rgba(255, 115, 0, 0.15); }
+.tech-icon-card.tensorflow i { color: #ff7300; }
+.tech-icon-card.tensorflow span { color: var(--text-primary); }
+.tech-icon-card.tensorflow:hover { border-color: #ff7300; box-shadow: 0 0 20px rgba(255, 115, 0, 0.45); }
+
+.tech-icon-card.sklearn { border-color: rgba(249, 148, 6, 0.4); box-shadow: 0 0 10px rgba(249, 148, 6, 0.15); }
+.tech-icon-card.sklearn i { color: #f99406; }
+.tech-icon-card.sklearn span { color: var(--text-primary); }
+.tech-icon-card.sklearn:hover { border-color: #f99406; box-shadow: 0 0 20px rgba(249, 148, 6, 0.45); }
+
+.tech-icon-card.pandas { border-color: rgba(130, 80, 255, 0.4); box-shadow: 0 0 10px rgba(130, 80, 255, 0.15); }
+.tech-icon-card.pandas i { color: #8250ff; }
+.tech-icon-card.pandas span { color: var(--text-primary); }
+.tech-icon-card.pandas:hover { border-color: #8250ff; box-shadow: 0 0 20px rgba(130, 80, 255, 0.45); }
+
+.tech-icon-card.flask { border-color: rgba(16, 185, 129, 0.4); box-shadow: 0 0 10px rgba(16, 185, 129, 0.15); }
+.tech-icon-card.flask i { color: #10b981; }
+.tech-icon-card.flask span { color: var(--text-primary); }
+.tech-icon-card.flask:hover { border-color: #10b981; box-shadow: 0 0 20px rgba(16, 185, 129, 0.45); }
+
+.tech-icon-card.n8n { border-color: rgba(234, 88, 12, 0.4); box-shadow: 0 0 10px rgba(234, 88, 12, 0.15); }
+.tech-icon-card.n8n i { color: #ea580c; }
+.tech-icon-card.n8n span { color: var(--text-primary); }
+.tech-icon-card.n8n:hover { border-color: #ea580c; box-shadow: 0 0 20px rgba(234, 88, 12, 0.45); }
+
+.tech-icon-card.ollama { border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 0 10px rgba(139, 92, 246, 0.15); }
+.tech-icon-card.ollama i { color: #8b5cf6; }
+.tech-icon-card.ollama span { color: var(--text-primary); }
+.tech-icon-card.ollama:hover { border-color: #8b5cf6; box-shadow: 0 0 20px rgba(139, 92, 246, 0.45); }
+
+
 .skills-grid {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
