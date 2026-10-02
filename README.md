@@ -14,4 +14,4 @@ Website portfolio pribadi untuk menampilkan project-project yang sudah saya kerj
 3. Buka di browser
 
 ## Contact
-Email: rafika1206@gmail.com
+Email: rafrafika1206@gmail.com
