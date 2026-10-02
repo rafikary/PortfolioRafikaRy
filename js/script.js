@@ -38,11 +38,11 @@ window.addEventListener('load', () => {
 function startTypingAnimation() {
     const typingText = document.querySelector('.typing-text');
     const texts = [
-        'Fresh Graduate IT',
+        'Software & AI Engineer',
         'Data Scientist BNSP',
-        'AI & ML Programmer',
-        'Fullstack Developer',
-        'Problem Solver'
+        'AI & ML Developer',
+        'Fullstack Web Developer',
+        'Problem Solver & Innovator'
     ];
     
     let textIndex = 0;
