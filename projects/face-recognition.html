@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Attendance System - Rafika Rahma Yunita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/project-detail.css?v=1.0.1">
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <div class="bg-glow-secondary"></div>
+    <header class="nav-detail">
+        <a href="../index.html#portfolio" class="back-btn">
+            <i class="fa fa-arrow-left"></i> Kembali Ke Portfolio
+        </a>
+        <div class="brand-name">Rafika Ry</div>
+        <button class="theme-switch-btn" id="theme-toggle" title="Toggle Theme">🌙</button>
+    </header>
+    <main class="container">
+        <div class="project-header">
+            <span class="project-category">AI Engineer &bull; Computer Vision &bull; 2025 – 2026</span>
+            <h1 class="project-title">Face Recognition Attendance System</h1>
+            <p class="project-subtitle">Sistem Absensi Real-Time Berbasis Face Recognition dengan Anti-Spoofing &amp; Geolocation Validation</p>
+        </div>
+        <div class="project-grid">
+            <div class="project-details-main">
+                <div class="card">
+                    <div class="project-media">
+                        <img src="../assets/project16.jpg" alt="Face Recognition Attendance System Project Showcase">
+                    </div>
+                    <div class="card-title"><i class="fa fa-info-circle"></i> Deskripsi Proyek</div>
+                    <div class="project-desc">
+                        <p>Face Recognition Attendance System adalah sistem absensi berbasis Artificial Intelligence dan Computer Vision yang dikembangkan untuk mengotomatisasi pencatatan kehadiran karyawan secara real-time menggunakan teknologi pengenalan wajah. Sistem ini dirancang dengan tingkat keamanan tinggi untuk mencegah berbagai bentuk kecurangan absensi.</p>
+                        <p>Sistem mengintegrasikan face recognition, anti-spoofing, liveness detection, validasi geolocation, serta validasi perangkat dan pencahayaan dalam satu pipeline terpadu. Hasil absensi langsung terintegrasi ke sistem HRIS perusahaan, memungkinkan manajemen memantau kehadiran karyawan secara akurat dan efisien tanpa intervensi manual.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title"><i class="fa fa-star"></i> Fitur Utama</div>
+                    <ul class="feature-list">
+                        <li><strong>Real-Time Face Recognition:</strong> Identifikasi wajah karyawan secara langsung menggunakan kamera perangkat dengan akurasi tinggi dan latensi rendah.</li>
+                        <li><strong>Anti-Spoofing &amp; Liveness Detection:</strong> Sistem mendeteksi dan menolak upaya penipuan menggunakan foto, video rekaman, maupun screen capture — hanya wajah asli dan hidup yang diterima.</li>
+                        <li><strong>Validasi Pencahayaan:</strong> Sistem secara otomatis mendeteksi kondisi pencahayaan dan memberikan peringatan jika kondisi terlalu gelap atau terlalu terang, memastikan kualitas capture wajah optimal.</li>
+                        <li><strong>Geolocation Validation:</strong> Validasi lokasi GPS karyawan untuk memastikan absensi dilakukan dari lokasi kerja yang ditentukan, mencegah fake location dan remote spoofing.</li>
+                        <li><strong>Face &amp; Device Validation:</strong> Sistem memvalidasi kombinasi identitas wajah dan perangkat terdaftar, sehingga absensi tidak dapat dilakukan dari perangkat yang tidak sah.</li>
+                        <li><strong>Deteksi Wajah Tidak Jelas:</strong> Sistem otomatis mendeteksi wajah yang tidak terlihat jelas, terhalang, atau tidak terdeteksi, dan memberikan panduan kepada pengguna untuk memperbaiki posisi.</li>
+                        <li><strong>Check-In &amp; Check-Out:</strong> Mendukung proses check-in dan check-out harian secara terpisah dengan pencatatan waktu yang presisi.</li>
+                        <li><strong>HRIS Attendance Integration:</strong> Hasil absensi otomatis tersinkronisasi dengan sistem HRIS perusahaan, menghilangkan kebutuhan input manual.</li>
+                        <li><strong>Attendance History:</strong> Riwayat kehadiran karyawan dapat diakses dan dikelola melalui dashboard administrasi terintegrasi.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-title"><i class="fa fa-shield-alt"></i> Mekanisme Keamanan &amp; Anti-Fraud</div>
+                    <ul class="feature-list">
+                        <li><strong>Foto &amp; Video Rejection:</strong> Model anti-spoofing membedakan wajah hidup dari foto diam atau video putar ulang menggunakan analisis tekstur dan gerakan mikro.</li>
+                        <li><strong>Screen Capture Detection:</strong> Sistem mendeteksi dan memblokir upaya absensi menggunakan screen capture atau layar perangkat lain.</li>
+                        <li><strong>Fake GPS Prevention:</strong> Validasi geolokasi menggunakan koordinat GPS real-time yang diverifikasi terhadap radius lokasi kerja yang dikonfigurasi.</li>
+                        <li><strong>Device Binding:</strong> Setiap karyawan terhubung ke perangkat terdaftar; upaya absensi dari perangkat lain secara otomatis ditolak.</li>
+                        <li><strong>Lighting Quality Check:</strong> Pemeriksaan otomatis terhadap kondisi pencahayaan sebelum proses face capture dilakukan untuk memastikan akurasi recognisi.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-title"><i class="fa fa-brain"></i> AI &amp; Computer Vision Capabilities</div>
+                    <ul class="feature-list">
+                        <li><strong>Deep Face Recognition:</strong> Memanfaatkan DeepFace dan model deep learning untuk menghasilkan face embedding yang akurat dan robust terhadap variasi pencahayaan serta ekspresi wajah.</li>
+                        <li><strong>OpenVINO Optimization:</strong> Model inference dioptimasi menggunakan Intel OpenVINO untuk performa real-time yang efisien pada hardware standar.</li>
+                        <li><strong>TensorFlow Model Pipeline:</strong> Pipeline training dan evaluasi model menggunakan TensorFlow, mencakup preprocessing, augmentasi data, dan fine-tuning model.</li>
+                        <li><strong>OpenCV Frame Processing:</strong> Pemrosesan frame kamera secara real-time menggunakan OpenCV untuk deteksi, cropping, dan normalisasi wajah.</li>
+                        <li><strong>Liveness Score Evaluation:</strong> Setiap upaya absensi menghasilkan liveness score yang menentukan apakah input diterima sebagai wajah asli.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-title"><i class="fa fa-chart-line"></i> Dampak Proyek</div>
+                    <ul class="feature-list">
+                        <li><strong>Eliminasi Buddy Punching:</strong> Face recognition memastikan hanya karyawan yang bersangkutan dapat melakukan absensi atas namanya sendiri.</li>
+                        <li><strong>Akurasi Kehadiran Tinggi:</strong> Data kehadiran lebih akurat karena tervalidasi secara biometrik, lokasi, dan perangkat secara bersamaan.</li>
+                        <li><strong>Efisiensi Proses HR:</strong> Integrasi HRIS menghilangkan kebutuhan rekap absensi manual, menghemat waktu tim HR secara signifikan.</li>
+                        <li><strong>Audit Trail Lengkap:</strong> Setiap transaksi absensi tercatat dengan timestamp, metadata lokasi, dan status validasi untuk keperluan audit.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-sidebar">
+                <div class="card">
+                    <div class="card-title"><i class="fa fa-tasks"></i> Detail Informasi</div>
+                    <table class="info-table">
+                        <tr>
+                            <td class="info-label">Peran</td>
+                            <td class="info-value">AI Engineer &amp; Computer Vision Developer</td>
+                        </tr>
+                        <tr>
+                            <td class="info-label">Instansi / Klien</td>
+                            <td class="info-value">PT QLCOM Solusi Bisnis Digital</td>
+                        </tr>
+                        <tr>
+                            <td class="info-label">Tahun</td>
+                            <td class="info-value">2025 – 2026</td>
+                        </tr>
+                        <tr>
+                            <td class="info-label">Tech Stack</td>
+                            <td class="info-value">
+                                <div class="tech-container">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">OpenCV</span>
+                                    <span class="tech-tag">DeepFace</span>
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">OpenVINO</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Docker</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card">
+                    <div class="card-title"><i class="fa fa-lightbulb"></i> Keahlian Kunci</div>
+                    <div class="tech-container">
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Face Recognition</span>
+                        <span class="tech-tag">Anti-Spoofing</span>
+                        <span class="tech-tag">Liveness Detection</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">OpenVINO</span>
+                        <span class="tech-tag">Geolocation Validation</span>
+                        <span class="tech-tag">Real-Time Processing</span>
+                        <span class="tech-tag">HRIS Integration</span>
+                        <span class="tech-tag">REST API (FastAPI)</span>
+                        <span class="tech-tag">Docker Deployment</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title"><i class="fa fa-lock"></i> Repository</div>
+                    <div class="scan-container">
+                        <p class="scan-text" style="text-align:center; padding: 12px 0;">
+                            <i class="fa fa-shield-alt" style="font-size:2rem; color: var(--primary-color); display:block; margin-bottom:10px;"></i>
+                            Repository bersifat <strong>Private</strong> karena merupakan proyek profesional dengan perjanjian kerahasiaan (NDA).
+                        </p>
+                        <div class="btn-group">
+                            <a href="javascript:void(0)" class="btn btn-primary" style="cursor: not-allowed; opacity: 0.6;">
+                                <i class="fa fa-lock"></i> Private Repository (NDA)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            toggle.innerHTML = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+        toggle.innerHTML = savedTheme === 'dark' ? '☀️' : '🌙';
+    </script>
+</body>
+</html>
