@@ -38,10 +38,11 @@ window.addEventListener('load', () => {
 function startTypingAnimation() {
     const typingText = document.querySelector('.typing-text');
     const texts = [
-        'Software & AI Engineer',
-        'Data Scientist BNSP',
-        'AI & ML Developer',
+        'Software, AI & Data Science Engineer',
+        'Certified Data Scientist BNSP',
+        'AI, ML & NLP Developer',
         'Fullstack Web Developer',
+        'Automation & n8n Specialist',
         'Problem Solver & Innovator'
     ];
     
